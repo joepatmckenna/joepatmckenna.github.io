@@ -1,0 +1,41 @@
+reset
+set ls 1 lt 1 lc rgb 'black' lw 2
+set ls 2 lt 1 lc rgb 'gray' lw 2
+set ls 3 lt 1 lc rgb 'blue' lw 2
+set ls 4 lt 1 lc rgb 'red' lw 2
+set ls 5 lt 1 lc rgb 'blue' lw 1
+
+set term pngcairo size 2/1.2*(640),1/1.2*(480) enhanced font 'Verdana,12'
+set output 'fig4.png'
+
+set multiplot
+
+set size .5,1
+set origin 0,0
+set key top left
+set xlabel 'b'
+set ylabel 'c'
+set xtics 1
+set ytics .25
+plot \
+x**2/4 with lines ls 4 title 'b^2/4', \
+'unstable.dat' using 5:1 every :::2::2 with lines ls 5 title 'snp locus'
+
+set size .5,1
+set origin .5,0
+set key top right opaque
+set xlabel 'c'
+set ylabel 'y'
+set xtics ('c_{hb}=0' 0, 'c_{snp}' .25)
+set ytics (0, '{/Symbol @{\140\140\140}\326}c_{snp}' .5, '-{/Symbol @{\140\140\140}\326}c_{snp}' -.5)
+plot [-.1:.5] [-1.3:1.3] \
+'stable.dat' using 1:2 every :::0::1 with lines ls 1 title 'stable', \
+'stable.dat' using 1:4 every :::1::1 with lines ls 1 notitle, \
+'unstable.dat' using 1:2 every :::0::1 with lines ls 2 title 'unstable', \
+'unstable.dat' using 1:4 every :::1::1 with lines ls 2 notitle, \
+sqrt(x) with lines ls 4 title '{/Symbol @{\140}\326}x', \
+-sqrt(x) with lines ls 4 notitle, \
+'unstable.dat' using 1:4 every :::2::2 with lines ls 5 title 'snp locus', \
+'unstable.dat' using 1:2 every :::2::2 with lines ls 5 notitle
+
+unset multiplot

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<title>Calculus 1</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+
+<body>
+	<div class="menu-break"></div>
+	<div class="section">
+		<div class="class-title">
+			<h1>Calculus 1 - Section 1</h1>
+			<span>Location: Love Building (LOV) 106</span>
+			<span>Time: M 8-8:50am, T 8-9:15am, R 8-9:15am</span>
+		</div>
+
+		<div class="contact-info" id="included-contact-info"></div>
+
+		<div class="line-break"></div>
+	</div>
+
+	<div class="menu-break"></div>
+	<div class="section">
+		<div class="syllabus-cell" onclick="show_syllabus('calc');">
+				<div class="caption-container">
+					<img src="img/syllabus-icon.png">
+					<div class="screen" onmouseover="dim(this);" onmouseout="brighten(this);">
+						<div class="caption">Syllabus</div>
+					</div>
+				</div>
+		</div>
+		<div class="notes-cell">
+			<div class="desc">
+				<h3 style="margin-bottom:0;">Notes:</h3>
+				<select id="notes-select" onchange="show_pdf('calc','notes')" style="width:90%;margin:auto;">
+
+					<option value="select">Select...</option>
+					
+					<option value="0201">2.1: The Tangent and Velocity Problems</option>
+					<option value="0202">2.2: The Limit of a Function</option>
+					<!--option value="0204">2.4: The Precise Definition of a Limit</option-->
+					<option value="0203">2.3: Calculating Limits Using Limit Laws</option>
+					<option value="0205">2.5: Continuity</option>
+					<option value="0206">2.6: Limits at Infinity; Horizontal Asymptotes</option>
+					<option value="0207">2.7: Derivatives and Rates of Change</option>
+					<option value="0208">2.8: The Derivative as a Function</option>
+
+					<option value="0301">3.1: Derivatives of Polynomials and Exponential Functions</option>
+					<option value="0302">3.2: The Product and Quotient Rules</option>
+					<option value="0303">3.3: Derivatives of Trigonometric Functions</option>
+					<option value="0304">3.4: The Chain Rule</option>
+					<option value="0305">3.5: Implicit Differentiation</option>
+					<option value="0306">3.6: Derivatives of Logarithmic Functions</option>
+					<option value="0307">3.7: Rates of Change in the Natural and Social Sciences</option>
+					<option value="0308">3.8: Exponential Growth and Decay</option>
+					<option value="0309">3.9: Related Rates</option>
+					<option value="0310">3.10: Linear Approximations and Differentials</option>
+					<option value="0311">3.11: Hyperbolic Functions</option>
+
+					<option value="0401">4.1: Minimum and Maximum Values</option>
+					<option value="0402">4.2: The Mean Value Theorem</option>
+					<option value="0403">4.3: How Derivatives Affect the Shape of a Graph</option>
+					<option value="0404">4.4: Indeterminate Forms and L'Hospital's Rule</option>
+					<option value="0405">4.5: Summary of Curve Sketching</option>
+					<option value="0407">4.7: Optimization Problems</option>
+					<option value="0408">4.8: Newton's Method</option>
+					<option value="0409">4.9: Antiderivatives</option>
+
+					<option value="0501">5.1: Areas and Distances</option>
+					<option value="0502">5.2: The Definite Integral</option>
+					<option value="0503">5.3: The Fundamental Theorem of Calculus</option>
+					<option value="0504">5.4: Indefinite Integrals and the Net Change Theorem</option>
+					<option value="0505">5.5: The Substitution Rule</option>
+
+					<option value="0601">6.1: Areas Between Curves</option>
+					<option value="0602">6.2: Volumes</option>
+					<option value="0603">6.3: Volumes by Cylindrical Shells</option>
+					<!--option value="0604">6.4: Work</option-->
+					<option value="0605">6.5: Average Value of a Function</option>
+
+				</select>
+				<h3 style="margin-bottom:0;">Quizzes:</h3>
+				<select id="quiz-select" onchange="show_pdf('calc','quiz')" style="width:90%;margin:auto;">
+					
+					<option value="select">Select...</option>
+
+					<option value="01_soln">Quiz 1: 2.1-2.3; 2.5</option>
+					<option value="02_soln">Quiz 2: 2.8; 3.1-3.3</option>
+					<option value="03_soln">Quiz 3: 3.8-3.11; 4.1-4.2</option>
+					<option value="04_soln">Quiz 4: 4.7-4.9; 5.1-5.4</option-->
+					
+				</select>
+
+				<h3 style="margin-bottom:0;">Tests:</h3>
+				<select id="test-select" onchange="show_pdf('calc','test')" style="width:90%;margin:auto;">
+
+					<option value="select">Select...</option>
+
+					<option value="01_soln">Test 1: 2.1-2.3; 2.5-2.8</option>
+					<option value="02_review">Test 2 Review</option>
+					<option value="02_soln">Test 2: 2.8; 3.1-3.7</option>
+					<option value="03_review">Test 3 Review</option>
+					<option value="03_soln">Test 3: 3.8-3.11; 4.1-4.5</option>
+					<option value="04_review">Test 4 Review</option>
+					<option value="04_soln">Test 4: 4.8-4.9; 5.1-5.5; 6.1</option>
+					<option value="final_review">Final Exam Review</option>
+					<!--option value="final_soln">Final Exam</option-->
+
+				</select>
+
+			</div>
+		</div>
+		<div class="assignments-cell">
+			<a href="https://www.webassign.net/login.html" target="_blank">
+				<div class="caption-container" style="margin-top:10px;">
+					<img src="img/webassign-icon.png">
+					<div class="screen" onmouseover="dim(this);" onmouseout="brighten(this);">
+						<div class="caption">WebAssign</div>
+					</div>
+				</div>
+			</a>
+			<a href="https://campus.fsu.edu" target="_blank">
+				<div class="caption-container" style="margin-top:10px;">
+					<img src="img/bb-icon.png">
+					<div class="screen" onmouseover="dim(this);" onmouseout="brighten(this);">
+						<div class="caption">Blackboard</div>
+					</div>
+				</div>
+			</a>
+		</div>
+		<div class="line-break"></div>
+
+	</div>
+
+	<div class="menu-break"></div>
+
+	<iframe id="pdf-viewer" src="" width="100%" height="780" style="border:none;"></iframe>
+	
+	<div class="menu-break"></div>
+
+	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script>
+		$(function(){
+			$("#included-contact-info").load("../contact-info.html"); 
+		});
+	</script>
+	<script type="text/javascript" src="../js/scripts.js"></script>
+	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenLite.min.js"></script>
+	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js"></script>
+
+</body>
+
+</html>

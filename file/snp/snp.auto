@@ -1,0 +1,12 @@
+# stationary branch
+ss=run(e='snp',c='snp.ss')
+# periodic branch
+ps=run(ss('HB1'),c='snp.ps')
+# saddle node of periodics starting data
+snpstart=run(ps('LP1'),c='snp.snp')
+# saddle node of periodics branch
+snp=merge(run(snpstart)+run(snpstart,DS='-'))
+#save data in b.snp, s.snp, and d.snp
+save(ss+ps+snp,'snp')
+#delete temporary AUTO files
+clean

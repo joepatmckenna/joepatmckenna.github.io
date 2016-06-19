@@ -1,0 +1,25 @@
+program dowhile
+implicit none
+	integer :: n
+	real :: a, r
+	
+	a = .5
+	r = .5
+	n = 0
+	do while(a>0.) ! while a is positive
+		a=a*r ! next term in geomtric sequence
+		n=n+1
+	end do
+	write(*,*) 'n = ',n
+	write(*,*) '.5^n = ',.5**n ! smallest s.p. representable binary number
+	write(*,*) '.5^(n+1) = ',.5**(n+1)
+
+	n = 0
+	do while(.true.) ! infinite loop
+		n=n+1
+		if (n>10) then
+			exit ! exit from while loop
+		end if
+	end do
+	write(*,*) 'n = ',n
+end program dowhile

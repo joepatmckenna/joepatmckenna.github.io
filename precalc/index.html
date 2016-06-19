@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<title>Precalculus Algebra</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+
+<body>
+
+	<div class="menu-break"></div>
+
+	<div class="section">
+		<div>
+			<div class="class-title">
+				<h1>Precalculus Algebra - Section 33</h1>
+				<span>Lecture Location: Hoffman Teaching Laboratory (HTL) 217</span>
+				<span>Lecture Time: MWF 1:25-2:15pm</span>
+				<span>Lab Location: Huge Classroom Building (HCB) 319</span>
+				<span>Lab Time: R 3:35-4:25pm</span>
+			</div>
+
+			<div class="contact-info" id="included-contact-info"></div>
+
+			<div class="line-break"></div>
+
+		</div>
+	</div>
+
+	<div class="menu-break"></div>
+	<div class="section">
+		<div class="syllabus-cell" onclick="show_syllabus('precalc');">
+				<div class="caption-container">
+					<img src="img/syllabus-icon.png">
+					<div class="screen" onmouseover="dim(this);" onmouseout="brighten(this);">
+						<div class="caption">Syllabus</div>
+					</div>
+				</div>
+		</div>
+		<div class="notes-cell">
+			<div class="desc">
+				<h3>Course Notes:</h3>
+				<select id="notes-select" 
+				onchange="show_pdf('precalc','notes')" style="width:90%;margin:auto;">
+
+					<option value="select">Select...</option>
+
+					<option value="0001">Unit 1: 3.1 - 4.1</option>
+					<option value="0002">Unit 2: 4.2 - 9.4</option>
+					<option value="0003">Unit 3: 10.1 - 11.3</option>
+					<option value="0004">Unit 4: 11.4 - 11.5</option>
+
+					<option value="0301">3.1: Quadratic Functions</option>
+					<option value="0302">3.2: Power Functions</option>
+					<option value="0303">3.3: Polynomial Functions</option>
+					<option value="0304">3.4: Real Zeros of Polynomial Functions</option>
+					<option value="0305">3.5: Complex Numbers</option>
+					<option value="0306">3.6: Complex Zeros: Fundamental Theorem of Algebra</option>
+					<option value="0307">3.7: Rational Functions</option>
+					<option value="0308">3.8: Polynomial and Rational Inequalities</option>
+
+					<option value="0401">4.1: One-to-one and Inverse Functions</option>
+					<option value="0402">4.2: Exponential Functions</option>
+					<option value="0403">4.3: Logarithmic Functions</option>
+					<option value="0404">4.4: Properties of Logarithms</option>
+					<option value="0405">4.5: Logarithmic and Exponential Equations</option>
+					<option value="0406">4.6: Compound Interest</option>
+					<option value="0407">4.7: Exponential Growth and Decay</option>
+
+					<option value="0902">9.2: The Parabola</option>
+					<option value="0903">9.3: The Ellipse</option>
+					<option value="0904">9.4: The Hyperbola</option>
+
+					<option value="1001">10.1: Systems of Two Linear Equations</option>
+					<option value="1002">10.2: Systems of Three Linear Equations</option>
+					<option value="1003">10.3: Systems of Linear Equations: Matrices</option>
+					<option value="1004">10.4: Systems of Linear Equations: Determinants</option>
+					<option value="1005">10.5: Matrix Algebra</option>
+
+					<option value="1101">11.1: Sequences</option>
+					<option value="1102">11.2: Arithmetic Sequences</option>
+					<option value="1103">11.3: Geometric Sequences and Series</option>
+					<option value="1104">11.4: Mathematical Induction</option>
+					<option value="1105">11.5: The Binomial Theorem</option>
+
+				</select>
+
+				<h3>Attendance Quizzes:</h3>
+
+				<select id="quiz-select" onchange="show_pdf('precalc','quiz')" style="width:90%;margin:auto;">
+
+					<option value="select">Select...</option>
+
+					<option value="0301">3.1: Quadratic Functions</option>
+					<option value="0302">3.2: Power Functions</option>
+					<option value="0303">3.3: Polynomial Functions</option>
+					<option value="0304">3.4: Real Zeros of Polynomial Functions</option>
+					<option value="0305">3.5: Complex Numbers</option>
+					<option value="0306">3.6: Complex Zeros: Fundamental Theorem of Algebra</option>
+					<option value="0307">3.7: Rational Functions</option>
+					<option value="0308">3.8: Polynomial and Rational Inequalities</option>
+
+					<option value="0401">4.1: One-to-one and Inverse Functions</option>
+					<option value="0402">4.2: Exponential Functions</option>
+					<option value="0403">4.3: Logarithmic Functions</option>
+					<option value="0404">4.4: Properties of Logarithms</option>
+					<option value="0405">4.5: Logarithmic and Exponential Equations</option>
+					<option value="0406">4.6: Compound Interest</option>
+					<option value="0407">4.7: Exponential Growth and Decay</option>
+
+					<option value="0902">9.2: The Parabola</option>
+					<option value="0903">9.3: The Ellipse</option>
+					<option value="0904">9.4: The Hyperbola</option>
+
+					<option value="1001">10.1: Systems of Two Linear Equations</option>
+					<option value="1002">10.2: Systems of Three Linear Equations</option>
+					<option value="1003">10.3: Systems of Linear Equations: Matrices</option>
+					<option value="1004">10.4: Systems of Linear Equations: Determinants</option>
+					<option value="1005">10.5: Matrix Algebra</option>
+
+					<option value="1101">11.1: Sequences</option>
+					<option value="1102">11.2: Arithmetic Sequences</option>
+					<option value="1103">11.3: Geometric Sequences and Series</option>
+					<option value="1104">11.4: Mathematical Induction</option>
+					<option value="1105">11.5: The Binomial Theorem</option>
+
+				</select>
+			</div>
+		</div>
+		<div class="assignments-cell">
+			<a href="http://einstein.math.fsu.edu:8140/students/" target="_blank">
+				<div class="caption-container" style="margin-top:10px;">
+					<img src="img/egrade-icon.png">
+					<div class="screen" onmouseover="dim(this);" onmouseout="brighten(this);">
+						<div class="caption">eGrade</div>
+					</div>
+				</div>
+			</a>
+			<a href="https://campus.fsu.edu" target="_blank">
+				<div class="caption-container" style="margin-top:10px;">
+					<img src="img/bb-icon.png">
+					<div class="screen" onmouseover="dim(this);" onmouseout="brighten(this);">
+						<div class="caption">Blackboard</div>
+					</div>
+				</div>
+			</a>
+		</div>
+		<div class="line-break"></div>
+
+	</div>
+
+	<div class="menu-break"></div>
+
+	<iframe id="pdf-viewer" src="" width="100%" height="780"></iframe>
+	
+	<div class="menu-break"></div>
+
+	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script>
+		$(function(){
+			$("#included-contact-info").load("../contact-info.html"); 
+		});
+	</script>
+	<script type="text/javascript" src="../js/scripts.js"></script>
+	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenLite.min.js"></script>
+	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js"></script>
+
+</body>
+
+</html>

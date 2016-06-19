@@ -1,0 +1,39 @@
+\begin{Verbatim}[frame=lines,label=array - commands and output]
+ gfortran array.f95 -o array
+ ./array
+A = 1 2 3 4 5
+(as a column) B =
+2
+4
+6
+8
+10
+(as a row) B =
+2 4 6 8 10
+A dot B = 110
+C(-2:0) = 3. 5. 4.
+D(:) = 4. 1. 0. 1. 4.
+maxval(D) = 4.
+minval(D) = 0.
+lbound(D) = -2
+ubound(D) = 2
+ (unformatted) E =            1           2           3           4
+ (formatted) E = 
+1 3  (row 1)
+2 4  (row 2)
+ (formatted) E = 
+1 2  (col 1)
+3 4  (col 2)
+F = 
+1 4
+2 5
+3 6
+F = 
+1 4
+2 5
+3 6
+eye = 
+1 0 0
+0 1 0
+0 0 1
+\end{Verbatim}

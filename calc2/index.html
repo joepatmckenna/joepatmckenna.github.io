@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<title>Calculus 2</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+
+<body>
+	<div class="menu-break"></div>
+	<div class="section">
+		<div class="class-title">
+			<h1>Calculus 2 - Section 3</h1>
+			<span>Location: Huge Classroom Building (HCB) 213</span>
+			<span>Time: MTWR 12:30-1:30pm</span>
+		</div>
+	
+		<div class="contact-info" id="included-contact-info"></div>
+
+		<div class="line-break"></div>
+	</div>
+
+	<div class="menu-break"></div>
+	<div class="section">
+		<div class="syllabus-cell" onclick="show_syllabus('calc2');">
+				<div class="caption-container">
+					<img src="img/syllabus-icon.png">
+					<div class="screen" onmouseover="dim(this);" onmouseout="brighten(this);">
+						<div class="caption">Syllabus</div>
+					</div>
+				</div>
+		</div>
+		<div class="notes-cell">
+			<div class="desc">
+
+				<h3 style="margin-bottom:0;">Quizzes:</h3>
+				<select id="quiz-select" onchange="show_pdf('calc2','quiz')" style="width:90%;margin:auto;">
+					
+					<option value="select">Select...</option>
+					<option value="0701_soln">7.1: Integration by Parts</option>
+					<option value="0702_soln">7.2: Trigonometric Integrals</option>
+					<option value="0703_soln">7.3: Trigonometric Substitution</option>
+					<option value="0704_soln">7.4: Integration of Rational Functions by Partial Fractions</option>
+					<option value="0705_soln">7.5: Strategy for Integration</option>
+					<option value="0706_soln">7.6: Integration Using Tables and CAS</option>
+					<option value="0708_soln">7.8: Improper Integrals</option>
+					<option value="0801_soln">8.1: Arc Length</option>
+					<option value="0802_soln">8.2: Area of Surface of Revolution</option>
+					<option value="0803_soln">8.3: Applications to Physics and Engineering</option>
+					<option value="0805_soln">8.5: Probability</option>
+					<option value="0901_soln">9.1: Modeling with Differential Equations</option>
+					<option value="0902_soln">9.2: Direction Fields and Euler's Method</option>
+					<option value="1002_soln">10.2: Calculus with Parametric Curves</option>
+					<option value="1004_soln">10.4: Areas and Lengths in Polar Coordinates</option>
+					<option value="1101_soln">11.1: Sequences</option>
+					<option value="1103_soln">11.3: The Integral Test</option>
+					<option value="1104_soln">11.4: The Comparison Tests</option>
+					<option value="1105_soln">11.5: The Ratio and Root Tests</option>
+					<option value="1106_soln">11.6: The Alternating Series Test</option>
+					
+				</select>
+
+				<h3 style="margin-bottom:0;">Tests:</h3>
+				<select id="test-select" onchange="show_pdf('calc2','test')" style="width:90%;margin:auto;">
+
+					<option value="select">Select...</option>
+					<option value="01_review">Test 1 Review</option>
+					<option value="01_soln">Test 1: 7.1-7.7</option>
+					<option value="02_review">Test 2 Review</option>
+					<option value="02_soln">Test 2: 7.8-9.4</option>
+					<option value="03_review">Test 3 Review</option>
+					<option value="03_soln">Test 3: 10.1-10.4; 11.1, 11.2</option>
+					<option value="04_review">Test 4 Review</option>
+					<option value="04_soln">Test 4: 11.3-11.10</option>
+
+				</select>
+
+				<h3 style="margin-bottom:0;">Miscellaneous:</h3>
+				<select id="misc-select" onchange="show_pdf('calc2','misc')" style="width:90%;margin:auto;">
+					
+					<option value="select">Select...</option>
+					<option value="hw">Suggested Homework</option>
+					<option value="trig">Trigonometric Formulas</option>
+					<option value="poll">Guide to using "Socrative Student" app</option>
+					<!--option value="quiz_roster">Quiz Response Record</option-->
+					
+				</select>
+
+			</div>
+		</div>
+		<div class="assignments-cell">
+
+			<a href="https://campus.fsu.edu" target="_blank">
+				<div class="caption-container" style="margin-top:10px;">
+					<img src="img/bb-icon.png">
+					<div class="screen" onmouseover="dim(this);" onmouseout="brighten(this);">
+						<div class="caption">Blackboard</div>
+					</div>
+				</div>
+			</a>
+		</div>
+		<div class="line-break"></div>
+
+	</div>
+
+	<div class="menu-break"></div>
+
+	<iframe id="pdf-viewer" src="" width="100%" height="780" style="border:none;"></iframe>
+	
+	<div class="menu-break"></div>
+
+	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script>
+		$(function(){
+			$("#included-contact-info").load("../contact-info.html"); 
+		});
+	</script>
+	<script type="text/javascript" src="../js/scripts.js"></script>
+	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenLite.min.js"></script>
+	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js"></script>
+
+</body>
+
+</html>
