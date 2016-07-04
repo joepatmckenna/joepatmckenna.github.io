@@ -1,0 +1,37 @@
+225: multidimensional interpolation.
+223 and 224: rational interpolation.
+222: stiffness in ODEs.
+221: Chapter 11.
+220: review set on solving linear recurrences.
+219: Chapter 11.
+218: Chapter 11.
+216 and 17: Chapter 10.
+216: Fourier interpolation and the discrete Fourier transform.
+217: the general relationship between the Generalized Fourier Series, quadrature, interpolation at the quadrature meshpoints and discrete transforms.
+215: Sections 9.6 and 9.7
+214: Sections 10.2 to 10.6
+213: Sections 9.1 to 9.4.
+212: Section 10.7.
+211: changing bases and economization of power series.
+210: Section 10.1.
+209: Section 10.8.
+208: Section 8.8.
+206 and 7: Section 8.7.
+205: Section 8.4.
+204: Section 8.5.
+201, 2 and 3: Sections 8.1, 8.2 and 8.3 on polynomial interpolation.
+200: overview of FCM2
+
+113: overview of line search methods for unconstrained optimization.
+112: Section 7.2. It includes solving symmetric positive definite systems via Steepest Descent and Conjugate Gradient derived via optimization
+111: Section 7.1, specifically Quasi-Newton methods.
+110: Section 7.1
+109: Sections 6.1, 6.2 and 6.3
+Sections 6.4 and 6.5 are also recommended reading.
+107 and 8: Sections 4.1, 4.2, 4.3 and 5.1
+106: Chapter 2 and Sections 3.1, 3.3, and 3.10
+105: Chapter 2
+104: Chapter 2
+103: Section 3.4.3
+102: Sections 3.2, 3.3, and 3.5
+101: Sections 1.1 -- 1.5, 1.10, 1.11.
