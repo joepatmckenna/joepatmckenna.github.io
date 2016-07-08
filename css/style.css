@@ -1,4 +1,4 @@
-@font-face {
+/*@font-face {
     font-family: "Computer Modern";
     src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunss.otf');
 }
@@ -17,10 +17,10 @@
     src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunbxo.otf');
     font-weight: bold;
     font-style: italic, oblique;
-}
+}*/
 
 body {
-    font-family: "Computer Modern", sans-serif;
+    font-family: verdana, sans-serif;
     background-color: #cfcfcf;
 	width:960px;
 	padding: 0;
