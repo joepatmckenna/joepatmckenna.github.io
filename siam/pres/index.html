@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Glucose oscillations can activate an endogenous oscillator in pancreatic islets</title>
+        <meta name="viewport" content="width=100%, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" href="reveal.js/css/reveal.css">
+        <link rel="stylesheet" href="reveal.js/css/theme/sky.css" id="theme">
+    </head>
+  
+	<body>
+
+    <div class="reveal">
+
+        <div class="slides">
+
+        <section data-background-image="img/bg.png" data-background-size="100%">
+            <h1>Glucose oscillations can activate an endogenous oscillator in pancreatic islets</h2>
+            <p>SIAM Conference on the Life Sciences 2016</p>
+            <p>Joseph P. McKenna</p>
+            <p>Florida State University Biomathematics</p>
+                <aside class="notes">
+                    <ul>
+                        <li></li>
+                    </ul>
+                </aside>
+        </section>
+
+        <section>
+
+            <section>
+                <h2>Pancreatic islets of Langerhans</h2>
+                <img data-src="img/pancreas.png" width="2000px">
+                <h4>Jurgen Mayer, Centre for Genomic Regulation</h4>
+                <aside class="notes">
+                    <ul>
+                        <li>Endocrine cell aggregates, various cell types</li>
+                        <li>Beta-cells most common, respond to glucose by secreting insulin into bloodstream</li>
+                        <li>Dispersed throughout pancreas</li>
+                        <li>Innervated by common vasculature</li>
+                    </ul>
+                </aside>
+            </section>
+          
+            <section>
+                <h2>Pulsatile insulin secretion</h2>
+                <table>
+                    <tr>
+                        <td>
+                            <img data-src="img/wahren.png">
+                            <h4>Wahren et al, Diabetes 2012</h4>
+                        </td>
+                        <td>
+                            <img data-src="img/hellman.png">
+                            <h4>Hellman et al, Endocr 2009</h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img data-src="img/song.png">
+                            <h4>Song et al, Endocr & Metab 2000</h4>
+                        </td>
+                        <td>
+                            <img data-src="img/porksen.png">
+                            <h4>Porksen et al, Endocr & Metab 1997</h4>
+                        </td>
+                    </tr>
+                </table>                
+                <aside class="notes">
+                    <ul>
+                        <li>Blood insulin level oscillates</li>
+                        <li>Measured proximal to pancreas and in peripheral arteries</li>
+                        <li>Pulses irregular in patients with type 2 diabetes</li>
+                        <li>What are the benefits of insulin pulses?</li>
+                    </ul>
+                </aside>
+            </section>
+          
+            <section>
+                <h2>Pulsatile insulin secretion</h2>
+                <img data-src="img/matveyenko.png">
+                <h4>Matveyenko et al, Diabetes 2012</h4>
+                <aside class="notes">
+                    <ul>
+                        <li>Liver controls blood glucose</li>
+                        <li>Insulin signals to liver switch between uptake and output</li>
+                        <li>Insulin pulses more effectively lower blood glucose</li>
+                        <li>How are the pulses produced?</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section>
+                <h2>$\beta$-cell oscillations</h2>
+                <table>
+                <tr>
+                    <td><img data-src="img/gilon.png"></td>
+                    <td><img data-src="img/merrins.png"></td>
+                </tr>
+                <tr>
+                    <td><h4>Gilon et al, J Biol Chem 1993</h4></td>
+                    <td><h4>Merrins et al, Biophys J 2016</h4></td>
+                </tr>
+                </table>
+                <aside class="notes">
+                    <ul>
+                        <li>Calcium promotes exocytosis of insulin</li>
+                        <li>Calcium oscillations cause pulsatile insulin secretion</li>
+                        <li>Metabolic oscillations and bursting produce calcium oscillations</li>
+                        <li>The system that produces calcium oscillations is the "islet oscillator"</li>
+                        <li>How robust is the islet oscillator?</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section>
+                <h2>Loss of Ca$^{2+}$ oscillations</h2>
+                <img data-src="img/thresh.png">
+                <h4>Nikita Mukhitov, Florida State Univeristy Chemistry</h4>
+                <aside class="notes">
+                    <ul>
+                        <li>Calcium oscillations are terminated by raising glucose above an upper threshold</li>
+                        <li>Upper threshold varies from islet to islet</li>
+                        <li>About 2/3 of islets tested exhibit slow oscillations, period > 2min</li>
+                        <li>We will see that delivering oscillatory glucose can recover these lost calcium oscillations</li>
+                        <li>Furthermore, we will see that other oscillating islets acting through the liver can recover these lost calcium oscillations</li>
+                    </ul>
+                </aside>
+            </section>
+          
+        </section>
+        
+        <section>
+
+            <section>
+                <h2>Modeling</h2>
+                <img data-src="img/cell.png">
+                <p>$\beta$-cell Dual Oscillator Model (Bertram et al, Biophys J 2004)</p>
+                <aside class="notes">
+                    <ul>
+                        <li>Glycolytic oscillations drive bursting and Ca$^{2+}$ oscillations</li>
+                        <li>Glycolytic oscillator incorporated because of data from muscle extract, validated in beta-cells by data from PKAR sensor</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section>
+                <h2>Glycolytic oscillator</h2>
+                <img data-src="img/glyc_stream.png">
+                \[\boxed{\begin{aligned}
+                {dG_i \over dt} &amp; = J_{GLUT}(G_e)-J_{GK} \\
+                {dF6P \over dt} &amp; = \alpha_1(J_{GK} - J_{PFK}) \\
+                {dFBP \over dt} &amp; = \alpha_2(J_{PFK} - J_{PDH})
+                \end{aligned}}\]
+                <aside class="notes">
+                    <ul>
+                        <li>Glucose taken up by glucose transporters</li>
+                        <li>Glucose phosphorylated by GK</li>
+                        <li>F6P converted to FBP by PFK</li>
+                        <li>FBP allostreically activates PFK</li>
+                        <li>External glucose is parameter that we will use to drive the system</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section>
+                <h2>Glycolytic oscillations</h2>
+                <img data-src="img/glyc_osc.png" height="500px">
+                <aside class="notes">
+                    <ul>
+                        <li>FBP activates PFK -> consumes F6P -> FBP consumed downstream -> PFK inactivates</li>
+                        <li>For which values of external glucose and for which initial conditions do glycolytic oscillations occur?</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section>
+                <h2>Glycolytic bifurcations</h2>
+                <img data-src="img/bif.png">
+                <aside class="notes">
+                    <ul>
+                        <li>At low glucose, no oscillations</li>
+                        <li>Definitely oscillations at intermediate level</li>
+                        <li>Oscillations may be lost in bistable range</li>
+                        <li>Oscillations definitely lost at high levels</li>
+                        <li>The Hopf at Gmid and the bistable range are critical for the following</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section>
+                <h2>Glycolytic bifurcations</h2>
+                <video controls loop="true" data-src="vid/g.mp4"></video>
+                <aside class="notes">
+                    <ul>
+                        <li>For a small range, an unstable periodic orbit separates a stable quilibrium from a stable steady state</li>
+                    </ul>
+                </aside>
+            </section>
+            
+            <section>
+                <h2>Activating glycolytic oscillations</h2>
+                <img data-src="img/activate.png">
+                <aside class="notes">
+                    <ul>
+                        <li> Depends on amplitude and frequency</li>
+                        <li> Amplitude must be large enough to exit bistable range</li>
+                        <li> Period must be resonant with period of glycolytic oscillator</li>
+                    </ul>
+                </aside>
+            </section>
+          
+            <section>
+                <h2>Amplitude dependence</h2>
+                <video controls loop="true" data-src="vid/ga.mp4"></video>
+                <aside class="notes">
+                    <ul>
+                        <li>Amplitude must be large enough to cross below the Hopf</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section>
+                <h2>Period dependence</h2>
+                <video controls loop="true" data-src="vid/gp.mp4"></video>
+                <aside class="notes">
+                    <ul>
+                        <li>Period must be large enough to allow phase point to escape stable equilibrium domain of attraction</li>
+                        <li>i.e. period must close to natural period of glycolytic oscillator, approx 5 min</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section>
+                <h2>Recovering Ca$^{2+}$ oscillations</h2>
+                <img data-src="img/recover.png">
+                <aside class="notes">
+                    <ul>
+                        <li> Activating GO underlies recover of bursting and caclcium oscillations and hence pulsatile insulin secretion</li>
+                    </ul>
+                </aside>
+            </section>
+
+        </section>
+
+        <section>
+            <section>
+                <h2>Experiments</h2>
+                <table>
+                    <tr>
+                        <td style="vertical-align:middle"><img data-src="img/device.png"></td>
+                        <td style="vertical-align:middle"><video loop="true" autoplay="true" data-src="vid/islets-cropped.mp4"></td>
+                    </tr>
+                </table>
+            <p>The Roper Lab, Florida State University Chemistry</p>
+            </section>
+        
+            <section>
+                <h2>Amplitude dependence</h2>
+                <img data-src="img/amp.png">
+                <h4>McKenna et al, submitted</h4>
+            </section>
+
+            <section>
+                <h2>Period dependence</h2>
+                <img data-src="img/per.png">
+                <h4>McKenna et al, submitted</h4>
+            </section>
+
+            <section>
+                <h2>Period dependence</h2>
+                <img data-src="img/per2.png">
+                <h4>McKenna et al, submitted</h4>
+            </section>
+
+            <section>
+                <h2>Data Summary</h2>
+                <img data-src="img/summary.png">
+                <h4>McKenna et al, submitted</h4>
+            </section>
+
+            <section>
+                <h2>Closed loop experiment</h2>
+                <img width="800" data-src="img/closed-loop.png">
+                <h4>Dhumpa et al, Biophys J 2014</h4>
+            </section>
+
+            <section>
+                <h2>Closed loop experiment</h2>
+                <img width="800" data-src="img/closed-loop-exp.png">
+                <h4>McKenna et al, submitted</h4>
+            </section>
+
+        </section>
+        
+        <section>
+
+            <section>
+                <h2>Conclusion</h2>
+            </section>
+
+        </section>
+
+
+        </div>
+		</div>
+
+		<script src="./reveal.js/lib/js/head.min.js"></script>
+		<script src="./reveal.js/js/reveal.js"></script>
+
+		<script>
+
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				height: "100%",
+				
+				math: {
+					config: 'TeX-AMS_HTML-full'
+				},
+
+                dependencies: [
+                    { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true },
+                    { src: 'reveal.js/plugin/notes/notes.js', async: true },
+                    { src: 'reveal.js/plugin/math/math.js', async: true}
+                ]
+			});
+
+		</script>
+
+	</body>
+</html>
