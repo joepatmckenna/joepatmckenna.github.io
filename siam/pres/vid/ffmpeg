@@ -1,2 +1,0 @@
-ffmpeg -i islets.mp4 -y -strict -2 -vf lutrgb="r=negval:g=negval:b=negval" islets-inverted.mp4
-ffmpeg -i islets-inverted.mp4 -y -strict -2 -vf "crop=425:350:440:220" islets-cropped.mp4
