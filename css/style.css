@@ -1,10 +1,11 @@
-@font-face {
-    font-family: "Computer Modern";
-    src: url('cmunss.otf');
-}
+/* @font-face { */
+/*     font-family: "Computer Modern"; */
+/*     src: url('cmunss.otf'); */
+/* } */
 
 body {
-    font-family: "Computer Modern", sans-serif;
+    /* font-family: "Computer Modern", sans-serif; */
+    font-family: Arial, sans-serif;
     background-color: #cfcfcf;
     width:960px;
     padding: 0;
