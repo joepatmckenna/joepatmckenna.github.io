@@ -35,24 +35,18 @@ Check for yourself that $$E=\|y-Xc\|_2^2$$. To find the minimizer $$c$$, we will
 \begin{algorithm}
 \caption{conjugate gradient}
 \begin{algorithmic}
-\PROCEDURE{ciig}{$A, p, r$}
-  \IF{$p &lt; r$}
-    \STATE $q = $ \CALL{Partition}{$A, p, r$}
-    \STATE \CALL{Quicksort}{$A, p, q - 1$}
-    \STATE \CALL{Quicksort}{$A, q + 1, r$}
-  \ENDIF
-\ENDPROCEDURE
-\PROCEDURE{Partition}{$A, p, r$}
-  \STATE $x = A[r]$
-  \STATE $i = p - 1$
-  \FOR{$j = p$ \TO $r - 1$}
-    \IF{$A[j] &lt; x$}
-      \STATE $i = i + 1$
-      \STATE exchange
-      $A[i]$ with     $A[j]$
-    \ENDIF
-    \STATE exchange $A[i]$ with $A[r]$
-  \ENDFOR
+\PROCEDURE{cg}{$A, b, c_0, \varepsilon$}
+\STATE $k = 0$
+\STATE $p_0 = r_0 = b - Ac_0$
+\WHILE {$\|r_k\|>\varepsilon$}
+\STATE $\alpha_k = {r_k^Tr_k \over p_k^TAp_k}$
+\STATE $c_{k+1} = c_k + \alpha_kp_k$
+\STATE $r_{k+1} = r_k - \alpha_kAp_k$
+\STATE $\beta_k = {r_{k+1}^Tr_{k+1} \over r_k^Tr_k}$
+\STATE $p_{k+1} = r_{k+1} + \beta_kp_k$
+\STATE $k = k+1$
+\ENDWHILE
+\RETURN $c_k$
 \ENDPROCEDURE
 \end{algorithmic}
 \end{algorithm}
