@@ -1,0 +1,25 @@
+@font-face {
+    font-family: "Computer Modern";
+    src: url('cmunss.otf');
+}
+body {
+    /* font-family: "Computer Modern", sans-serif; */
+    font-weight: normal;
+    width:960px;
+    padding: 0;
+    border: 0;
+    margin: auto;
+    line-height:1.3em;
+}
+h1, h2, h3, h4, p {
+    font-weight: normal;
+}
+div.outline-2 {
+    margin-left: 0em;
+}
+div.outline-3, div.outline-4 {
+    margin-left: 1em;
+}
+div.outline-text-2, div.outline-text-3 {
+    margin-left: 1em;
+}

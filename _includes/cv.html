@@ -1,11 +1,12 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<!-- 2017-03-27 Mon 23:43 -->
-<meta  charset="utf-8">
-<meta  name="viewport" content="width=device-width, initial-scale=1">
+<!-- 2017-06-21 Wed 23:39 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Curriculum Vitae</title>
-<meta  name="generator" content="Org-mode">
-<meta  name="author" content="Joseph P. McKenna">
+<meta name="generator" content="Org mode">
+<meta name="author" content="Joseph P. McKenna">
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
   .title  { text-align: center;
@@ -50,13 +51,97 @@
     border: 1px solid black;
   }
   pre.src:hover:before { display: inline;}
-  pre.src-sh:before    { content: 'sh'; }
-  pre.src-bash:before  { content: 'sh'; }
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
   pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
-  pre.src-R:before     { content: 'R'; }
-  pre.src-perl:before  { content: 'Perl'; }
-  pre.src-java:before  { content: 'Java'; }
-  pre.src-sql:before   { content: 'SQL'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
 
   table { border-collapse:collapse; }
   caption.t-above { caption-side: top; }
@@ -89,9 +174,10 @@
     { font-size: 10px; font-weight: bold; white-space: nowrap; }
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
   /*]]>*/-->
 </style>
-<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="cv.css">
 
 <script type="text/javascript" src="http://orgmode.org/org-info.js">
 /**
@@ -169,7 +255,7 @@ org_html_manager.setup();  // activate after the parameters are set
 @licstart  The following is the entire license notice for the
 JavaScript code in this tag.
 
-Copyright (C) 2012-2013 Free Software Foundation, Inc.
+Copyright (C) 2012-2017 Free Software Foundation, Inc.
 
 The JavaScript code in this tag is free software: you can
 redistribute it and/or modify it under the terms of the GNU
@@ -231,7 +317,7 @@ for the JavaScript code in this tag.
 });
 </script>
 <script type="text/javascript"
-        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content">
@@ -243,303 +329,295 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgheadline1">Contact Information</a></li>
-<li><a href="#orgheadline5">Education</a>
+<li><a href="#orgc3f0ee9">Contact Information</a></li>
+<li><a href="#org32c0c73">Education</a>
 <ul>
-<li><a href="#orgheadline2">8/12 - present: Ph.D. candidate in Mathematics, Florida State University, GPA: 3.9</a></li>
-<li><a href="#orgheadline3">8/04 - 5/08: B.A. Mathematics, St. Mary's College of Maryland, major GPA: 3.5</a></li>
-<li><a href="#orgheadline4">9/09 - 12/09: Graduate non-degree, University of Illinois at Chicago, GPA: 4.0</a></li>
+<li><a href="#org7aa6b97">8/12 - 5/17: Ph.D. Mathematical Biology, Florida State University, GPA: 3.9</a></li>
+<li><a href="#org9a4dc61">8/04 - 5/08: B.A. Mathematics, St. Mary's College of Maryland, major GPA: 3.5</a></li>
+<li><a href="#org19f9b8d">9/09 - 12/09: Graduate non-degree, University of Illinois at Chicago, GPA: 4.0</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline6">Publications</a></li>
-<li><a href="#orgheadline10">Research Experience</a>
+<li><a href="#orgdb437cc">Publications</a></li>
+<li><a href="#orgf67ce63">Research Experience</a>
 <ul>
-<li><a href="#orgheadline7">7/16 - present: Research assistant, Florida State University</a></li>
-<li><a href="#orgheadline8">5/14 - 8/14: Intern in biomedical research, National Institutes of Health, Laboratory of Biological Modeling</a></li>
-<li><a href="#orgheadline9">8/07 - 5/08: Undergraduate thesis: <i>Regular polytopes and symmetry</i>, St. Mary's College of Maryland</a></li>
+<li><a href="#org050b93d">10/17 - present: Postdoctoral fellow, National Institutes of Health, Laboratory of Biological Modeling</a></li>
+<li><a href="#orgf177852">7/16 - 5/17: Research assistant, Florida State University</a></li>
+<li><a href="#orgdf9884e">5/14 - 8/14: Intern, National Institutes of Health, Laboratory of Biological Modeling</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline11">Conferences and Workshops</a></li>
-<li><a href="#orgheadline16">Teaching Experience</a>
+<li><a href="#org0e3451e">Conferences and Workshops</a></li>
+<li><a href="#org007343d">Teaching Experience</a>
 <ul>
-<li><a href="#orgheadline12">8/12 - 7/16: Graduate teaching assistant, Florida State University</a></li>
-<li><a href="#orgheadline13">8/10 - 6/12: Junior high school instructor, Peace Corps Ghana, West Africa</a></li>
-<li><a href="#orgheadline14">9/09 - 12/09: Tutor, Mathematical Science Learning Center, University of Illinois at Chicago</a></li>
-<li><a href="#orgheadline15">9/07 - 5/08: Teaching assistant, St. Mary's College of Maryland</a></li>
+<li><a href="#org41cfb88">8/12 - 7/16: Graduate teaching assistant, Florida State University</a></li>
+<li><a href="#orgd628349">8/10 - 6/12: Junior high school instructor, Peace Corps Ghana, West Africa</a></li>
+<li><a href="#orgabca758">9/09 - 12/09: Tutor, Mathematical Science Learning Center, University of Illinois at Chicago</a></li>
+<li><a href="#org846e8ec">9/07 - 5/08: Teaching assistant, St. Mary's College of Maryland</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline20">Work Experience</a>
+<li><a href="#org2490bd7">Work Experience</a>
 <ul>
-<li><a href="#orgheadline17">7/11 - 6/12: Community-based project manager, Peace Corps Ghana, West Africa</a></li>
-<li><a href="#orgheadline18">11/10 - 6/12: Editor, <i>Celebrate Languages Audio Project</i>, Peace Corps Ghana, West Africa</a></li>
-<li><a href="#orgheadline19">11/08 - 3/09: Computer assembler, FreeGeek, Chicago, IL</a></li>
+<li><a href="#org8b8f49c">7/11 - 6/12: Peace Corps Volunteer, Ghana, West Africa</a></li>
+<li><a href="#orgd320d19">11/10 - 6/12: Editor, <i>Celebrate Languages Audio Project</i>, Peace Corps Ghana, West Africa</a></li>
+<li><a href="#org4c1f1e9">11/08 - 3/09: Computer assembler, FreeGeek, Chicago, IL</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline21">Technical Abilities</a></li>
-<li><a href="#orgheadline22">Awards</a></li>
-<li><a href="#orgheadline23">Memberships</a></li>
-<li><a href="#orgheadline27">References</a>
+<li><a href="#org2331f8e">Technical Abilities</a></li>
+<li><a href="#org76d0599">Awards</a></li>
+<li><a href="#org2cda583">Memberships</a></li>
+<li><a href="#org0ab67e0">References</a>
 <ul>
-<li><a href="#orgheadline24">Dr. Richard Bertram</a></li>
-<li><a href="#orgheadline25">Dr. Arthur Sherman</a></li>
-<li><a href="#orgheadline26">Dr. Kyle Gallivan</a></li>
+<li><a href="#orgc439ede">Dr. Richard Bertram</a></li>
+<li><a href="#orgaeac892">Dr. Arthur Sherman</a></li>
+<li><a href="#org1f6c6ed">Dr. Kyle Gallivan</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orgheadline1" class="outline-2">
-<h2 id="orgheadline1">Contact Information</h2>
-<div class="outline-text-2" id="text-orgheadline1">
+<div id="outline-container-orgc3f0ee9" class="outline-2">
+<h2 id="orgc3f0ee9">Contact Information</h2>
+<div class="outline-text-2" id="text-orgc3f0ee9">
 <p>
-Florida State University<br >
-Department of Mathematics<br >
-1017 Academic Way<br >
-Love Building Room 208<br >
-Tallahassee, FL 32306-4510<br >
-email: jmckenna@fsu.edu<br >
-web: <a href="http://www.math.fsu.edu/~jmckenna">http://www.math.fsu.edu/~jmckenna</a><br >
+3132 Clarendon Dr.<br>
+Annapolis, MD 21403<br>
+email: joepatmckenna@gmail.com<br>
+web: <a href="https://joepatmckenna.github.io">https://joepatmckenna.github.io</a><br>
 </p>
 </div>
 </div>
-<div id="outline-container-orgheadline5" class="outline-2">
-<h2 id="orgheadline5">Education</h2>
-<div class="outline-text-2" id="text-orgheadline5">
-</div><div id="outline-container-orgheadline2" class="outline-3">
-<h3 id="orgheadline2">8/12 - present: Ph.D. candidate in Mathematics, Florida State University, GPA: 3.9</h3>
-<div class="outline-text-3" id="text-orgheadline2">
+<div id="outline-container-org32c0c73" class="outline-2">
+<h2 id="org32c0c73">Education</h2>
+<div class="outline-text-2" id="text-org32c0c73">
+</div><div id="outline-container-org7aa6b97" class="outline-3">
+<h3 id="org7aa6b97">8/12 - 5/17: Ph.D. Mathematical Biology, Florida State University, GPA: 3.9</h3>
+<div class="outline-text-3" id="text-org7aa6b97">
 <ul class="org-ul">
-<li>Research focus: Nonlinear dynamics, Mathematical biology, Pancreatic islets and diabetes<br ></li>
-<li>Relevant coursework: Partial/Ordinary/Stochastic differential equations, Numerical analysis, Monte Carlo methods, Machine learning, Computational biology<br ></li>
+<li>Dissertation: <i>Insulin secretion rhythms: calcium regulation of &beta;-cell metabolism and rescue of islet oscillations</i><br></li>
+<li>Relevant coursework: Differential equations, Numerical analysis, Monte Carlo methods, Machine learning, Computational biology<br></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgheadline3" class="outline-3">
-<h3 id="orgheadline3">8/04 - 5/08: B.A. Mathematics, St. Mary's College of Maryland, major GPA: 3.5</h3>
-<div class="outline-text-3" id="text-orgheadline3">
+<div id="outline-container-org9a4dc61" class="outline-3">
+<h3 id="org9a4dc61">8/04 - 5/08: B.A. Mathematics, St. Mary's College of Maryland, major GPA: 3.5</h3>
+<div class="outline-text-3" id="text-org9a4dc61">
 <ul class="org-ul">
-<li>GRE: Quantitative 167 (95%), Verbal 162 (90%)<br ></li>
+<li>Thesis: <i>Regular Polytopes and Symmetry</i><br></li>
+<li>GRE: Quantitative 167 (95%), Verbal 162 (90%)<br></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgheadline4" class="outline-3">
-<h3 id="orgheadline4">9/09 - 12/09: Graduate non-degree, University of Illinois at Chicago, GPA: 4.0</h3>
-<div class="outline-text-3" id="text-orgheadline4">
+<div id="outline-container-org19f9b8d" class="outline-3">
+<h3 id="org19f9b8d">9/09 - 12/09: Graduate non-degree, University of Illinois at Chicago, GPA: 4.0</h3>
+<div class="outline-text-3" id="text-org19f9b8d">
 <ul class="org-ul">
-<li>Relevant coursework: Topology, Logic, \(\textstyle{\LaTeX}\)<br ></li>
-</ul>
-</div>
-</div>
-</div>
-<div id="outline-container-orgheadline6" class="outline-2">
-<h2 id="orgheadline6">Publications</h2>
-<div class="outline-text-2" id="text-orgheadline6">
-<ul class="org-ul">
-<li>J. P. McKenna, R. Dhumpa, N Mukhitov, M. G. Roper, and R. Bertram, <i>Glucose oscillations can activate an endogenous oscillator in pancreatic islets</i>, PLOS Computational Biology, Vol 12(10), 2016, pp e1005143, <a href="http://dx.doi.org/10.1371/journal.pcbi.1005143">10.1371/journal.pcbi.1005143</a><br ></li>
-<li>J. P. McKenna, J. Ha, M. J. Merrins, L. S. Satin, A. Sherman, and R. Bertram, <i>Calcium effects on ATP production and consumption have regulatory roles on oscillatory islet activity</i>, Biophysical Journal, Vol 110, Feb 2016, pp 733-742, <a href="http://dx.doi.org/10.1016/j.bpj.2015.11.3526">10.1016/j.bpj.2015.11.3526</a><br ></li>
-<li>M. J. Merrins, C. Poudel, J. P. McKenna, J. Ha, A. Sherman, R. Bertram, and L. S. Satin, <i>Phase analysis of metabolic oscillations and membrane potential in pancreatic islet &beta;-cells</i>, Biophysical Journal, Vol 110, Feb 2016, pp 691-699, <a href="http://dx.doi.org/10.1016/j.bpj.2015.12.029">10.1016/j.bpj.2015.12.029</a><br ></li>
-<li>J. P. McKenna, correct solution to <i>More and more balls in urns</i> in American Mathematical Monthly, Vol 118(8), Oct 2011, pp 750-751, <a href="http://dx.doi.org/10.4169/amer.math.monthly.118.08.747">10.4169/amer.math.monthly.118.08.747</a><br ></li>
-<li>J. P. McKenna, correct solution to <i>Permutations with specified left-to-right maxima</i> in Mathematics Magazine, Vol 84(2), Apr 2011, pp 153-154, <a href="http://dx.doi.org/10.4169/math.mag.84.2.150">10.4169/math.mag.84.2.150</a><br ></li>
-<li>J. P. McKenna, correct solution to <i>Counting block fountains of coins</i> in Mathematics Magazine, Vol 83(4), Oct 2010, pp 305, <a href="http://www.jstor.org/stable/10.4169/mathmaga.83.4.0304a">10.4169/mathmaga.83.4.0304a</a><br ></li>
-</ul>
-</div>
-</div>
-<div id="outline-container-orgheadline10" class="outline-2">
-<h2 id="orgheadline10">Research Experience</h2>
-<div class="outline-text-2" id="text-orgheadline10">
-</div><div id="outline-container-orgheadline7" class="outline-3">
-<h3 id="orgheadline7">7/16 - present: Research assistant, Florida State University</h3>
-<div class="outline-text-3" id="text-orgheadline7">
-<ul class="org-ul">
-<li>Forming and analyzing a model of pancreatic &beta;-cells to better understand their role in diabetes. Specifically, investigating the importance of Ca<sup>2+</sup>-activation of mitochondria for maintaining normal oscillatory insulin release from &beta;-cells. Funding from NSF grant DMS 1612193.<br ></li>
-</ul>
-</div>
-</div>
-<div id="outline-container-orgheadline8" class="outline-3">
-<h3 id="orgheadline8">5/14 - 8/14: Intern in biomedical research, National Institutes of Health, Laboratory of Biological Modeling</h3>
-</div>
-<div id="outline-container-orgheadline9" class="outline-3">
-<h3 id="orgheadline9">8/07 - 5/08: Undergraduate thesis: <i>Regular polytopes and symmetry</i>, St. Mary's College of Maryland</h3>
-<div class="outline-text-3" id="text-orgheadline9">
-<ul class="org-ul">
-<li>Wrote exposition describing rotational and reflectional symmetries of four-dimensional analogues to the Platonic solids. Created online, interactive Java applet visualizations.<br ></li>
+<li>Relevant coursework: Topology, Logic, \(\textstyle{\LaTeX}\)<br></li>
 </ul>
 </div>
 </div>
 </div>
-<div id="outline-container-orgheadline11" class="outline-2">
-<h2 id="orgheadline11">Conferences and Workshops</h2>
-<div class="outline-text-2" id="text-orgheadline11">
+<div id="outline-container-orgdb437cc" class="outline-2">
+<h2 id="orgdb437cc">Publications</h2>
+<div class="outline-text-2" id="text-orgdb437cc">
 <ul class="org-ul">
-<li>5/17: Invited minisymposium talk, <i>State and parameter estimation in models of cellular electrical activity</i>, SIAM Conference on Dynamical Systems, Snowbird, UT<br ></li>
-<li>3/17: Invited minisymposium talk, <i>Recent advances in experimentally-guided mathematical biology</i>, SIAM Southeastern Atlantic Section Conference, Tallahassee, FL<br ></li>
-<li>3/17: Contributed poster, <i>Dynamic neuron networks with Fitzhugh-Nagumo nodes</i>, SIAM Southeastern Atlantic Section Conference, Tallahassee, FL<br ></li>
-<li>2/17: Contributed poster, <i>Markov chain Monte Carlo optimization for fitting excitable cell current-voltage relations to voltage clamp data</i>, SIAM Conference on Computational Science and Engineering, Atlanta, GA<br ></li>
-<li>11/16: Invited workshop participant, <i>Integrated mathematical oncology 6<sup>th</sup> annual workshop: resistance</i>, Moffitt Cancer Center, Tampa, FL<br ></li>
-<li>10/16: Invited workshop participant, <i>Dynamical systems and data analysis in neuroscience: bridging the gap</i>, Mathematical Biosciences Institute, Columbus, OH<br ></li>
-<li>7/16: Invited minisymposium talk, <i>Modeling insulin and glucagon secretion and their roles in diabetes</i>, SIAM Annual Conference, Boston, MA<br ></li>
-<li>5/16: Contributed poster, <i>Reducing a conductance-based neuron model to normal form</i>, Biology and Medicine through Mathematics Conference, Richmond, VA<br ></li>
-<li>7/15: Invited minisymposium talk, <i>Modeling pancreatic islets and diabetes from the cellular level to the whole body</i>, Society for Mathematical Biology Annual Meeting, Atlanta, GA<br ></li>
-<li>05/15: Contributed poster, <i>Rescuing the Dual Oscillator Model for &beta;-cells from inconvenient data</i>, Midwest Islet Club Annual Meeting, Chicago, IL<br ></li>
-<li>8/14: Invited poster, <i>Mathematical model of metabolic oscillations in pancreatic &beta;-cells</i>, NIH Summer Intern Poster Session, Bethesda, MD<br ></li>
+<li>J. P. McKenna, R. Dhumpa, N Mukhitov, M. G. Roper, and R. Bertram, <i>Glucose oscillations can activate an endogenous oscillator in pancreatic islets</i>, PLOS Computational Biology, Vol 12(10), 2016, pp e1005143, <a href="http://dx.doi.org/10.1371/journal.pcbi.1005143">10.1371/journal.pcbi.1005143</a><br></li>
+<li>J. P. McKenna, J. Ha, M. J. Merrins, L. S. Satin, A. Sherman, and R. Bertram, <i>Calcium effects on ATP production and consumption have regulatory roles on oscillatory islet activity</i>, Biophysical Journal, Vol 110, Feb 2016, pp 733-742, <a href="http://dx.doi.org/10.1016/j.bpj.2015.11.3526">10.1016/j.bpj.2015.11.3526</a><br></li>
+<li>M. J. Merrins, C. Poudel, J. P. McKenna, J. Ha, A. Sherman, R. Bertram, and L. S. Satin, <i>Phase analysis of metabolic oscillations and membrane potential in pancreatic islet &beta;-cells</i>, Biophysical Journal, Vol 110, Feb 2016, pp 691-699, <a href="http://dx.doi.org/10.1016/j.bpj.2015.12.029">10.1016/j.bpj.2015.12.029</a><br></li>
+<li>J. P. McKenna, correct solution to <i>More and more balls in urns</i> in American Mathematical Monthly, Vol 118(8), Oct 2011, pp 750-751, <a href="http://dx.doi.org/10.4169/amer.math.monthly.118.08.747">10.4169/amer.math.monthly.118.08.747</a><br></li>
+<li>J. P. McKenna, correct solution to <i>Permutations with specified left-to-right maxima</i> in Mathematics Magazine, Vol 84(2), Apr 2011, pp 153-154, <a href="http://dx.doi.org/10.4169/math.mag.84.2.150">10.4169/math.mag.84.2.150</a><br></li>
+<li>J. P. McKenna, correct solution to <i>Counting block fountains of coins</i> in Mathematics Magazine, Vol 83(4), Oct 2010, pp 305, <a href="http://www.jstor.org/stable/10.4169/mathmaga.83.4.0304a">10.4169/mathmaga.83.4.0304a</a><br></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgheadline16" class="outline-2">
-<h2 id="orgheadline16">Teaching Experience</h2>
-<div class="outline-text-2" id="text-orgheadline16">
-</div><div id="outline-container-orgheadline12" class="outline-3">
-<h3 id="orgheadline12">8/12 - 7/16: Graduate teaching assistant, Florida State University</h3>
-<div class="outline-text-3" id="text-orgheadline12">
+<div id="outline-container-orgf67ce63" class="outline-2">
+<h2 id="orgf67ce63">Research Experience</h2>
+<div class="outline-text-2" id="text-orgf67ce63">
+</div><div id="outline-container-org050b93d" class="outline-3">
+<h3 id="org050b93d">10/17 - present: Postdoctoral fellow, National Institutes of Health, Laboratory of Biological Modeling</h3>
+</div>
+<div id="outline-container-orgf177852" class="outline-3">
+<h3 id="orgf177852">7/16 - 5/17: Research assistant, Florida State University</h3>
+<div class="outline-text-3" id="text-orgf177852">
 <ul class="org-ul">
-<li>5/16 - 7/16: <i>Trigonometry</i> proctor<br ></li>
-<li>8/15 - 5/16: <i>Foundations of Computational Mathematics</i> (graduate level) recitation instructor<br ></li>
-<li>8/15 - 12/15: <i>Applied Computational Mathematics</i> (graduate level) instructor<br ></li>
-<li>5/15 - 8/15: <i>Calculus II</i> instructor<br ></li>
-<li>1/14 - 8/15: <i>Calculus I</i> instructor<br ></li>
-<li>8/13 - 12/14: <i>Precalculus</i> instructor<br ></li>
-<li>8/12 - 5/13: <i>Business Calculus</i>, <i>Precalculus</i>, <i>College Algebra</i>, <i>Trigonometry</i>, <i>Liberal Arts Mathematics</i> proctor<br ></li>
+<li>Formed and analyzed a model of pancreatic &beta;-cells to better understand their role in diabetes. Specifically, investigated the importance of Ca<sup>2+</sup>-activation of mitochondria for maintaining normal oscillatory insulin release from &beta;-cells. Funding from NSF grant DMS 1612193.<br></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgheadline13" class="outline-3">
-<h3 id="orgheadline13">8/10 - 6/12: Junior high school instructor, Peace Corps Ghana, West Africa</h3>
-<div class="outline-text-3" id="text-orgheadline13">
+<div id="outline-container-orgdf9884e" class="outline-3">
+<h3 id="orgdf9884e">5/14 - 8/14: Intern, National Institutes of Health, Laboratory of Biological Modeling</h3>
+</div>
+</div>
+<div id="outline-container-org0e3451e" class="outline-2">
+<h2 id="org0e3451e">Conferences and Workshops</h2>
+<div class="outline-text-2" id="text-org0e3451e">
 <ul class="org-ul">
-<li>8/10 - 6/12: <i>Mathematics</i> instructor<br ></li>
-<li>8/11 - 6/12: <i>Information and Communications Technology</i>, <i>English</i> instructor<br ></li>
+<li>5/17: Invited minisymposium talk, <i>State and parameter estimation in models of cellular electrical activity</i>, SIAM Conference on Dynamical Systems, Snowbird, UT<br></li>
+<li>3/17: Invited minisymposium talk, <i>Recent advances in experimentally-guided mathematical biology</i>, SIAM Southeastern Atlantic Section Conference, Tallahassee, FL<br></li>
+<li>3/17: Contributed poster, <i>Dynamic neuron networks with Fitzhugh-Nagumo nodes</i>, SIAM Southeastern Atlantic Section Conference, Tallahassee, FL<br></li>
+<li>2/17: Contributed poster, <i>Markov chain Monte Carlo optimization for fitting excitable cell current-voltage relations to voltage clamp data</i>, SIAM Conference on Computational Science and Engineering, Atlanta, GA<br></li>
+<li>11/16: Invited workshop participant, <i>Integrated mathematical oncology 6<sup>th</sup> annual workshop: resistance</i>, Moffitt Cancer Center, Tampa, FL<br></li>
+<li>10/16: Invited workshop participant, <i>Dynamical systems and data analysis in neuroscience: bridging the gap</i>, Mathematical Biosciences Institute, Columbus, OH<br></li>
+<li>7/16: Invited minisymposium talk, <i>Modeling insulin and glucagon secretion and their roles in diabetes</i>, SIAM Annual Conference, Boston, MA<br></li>
+<li>5/16: Contributed poster, <i>Reducing a conductance-based neuron model to normal form</i>, Biology and Medicine through Mathematics Conference, Richmond, VA<br></li>
+<li>7/15: Invited minisymposium talk, <i>Modeling pancreatic islets and diabetes from the cellular level to the whole body</i>, Society for Mathematical Biology Annual Meeting, Atlanta, GA<br></li>
+<li>05/15: Contributed poster, <i>Rescuing the Dual Oscillator Model for &beta;-cells from inconvenient data</i>, Midwest Islet Club Annual Meeting, Chicago, IL<br></li>
+<li>8/14: Invited poster, <i>Mathematical model of metabolic oscillations in pancreatic &beta;-cells</i>, NIH Summer Intern Poster Session, Bethesda, MD<br></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgheadline14" class="outline-3">
-<h3 id="orgheadline14">9/09 - 12/09: Tutor, Mathematical Science Learning Center, University of Illinois at Chicago</h3>
-<div class="outline-text-3" id="text-orgheadline14">
+<div id="outline-container-org007343d" class="outline-2">
+<h2 id="org007343d">Teaching Experience</h2>
+<div class="outline-text-2" id="text-org007343d">
+</div><div id="outline-container-org41cfb88" class="outline-3">
+<h3 id="org41cfb88">8/12 - 7/16: Graduate teaching assistant, Florida State University</h3>
+<div class="outline-text-3" id="text-org41cfb88">
 <ul class="org-ul">
-<li>9/09 - 12/09: <i>Linear algebra</i>, <i>Calculus I &amp; II</i> small-group tutor<br ></li>
+<li>5/16 - 7/16: <i>Trigonometry</i> proctor<br></li>
+<li>8/15 - 5/16: <i>Foundations of Computational Mathematics</i> (graduate level) recitation instructor<br></li>
+<li>8/15 - 12/15: <i>Applied Computational Mathematics</i> (graduate level) instructor<br></li>
+<li>5/15 - 8/15: <i>Calculus II</i> instructor<br></li>
+<li>1/14 - 8/15: <i>Calculus I</i> instructor<br></li>
+<li>8/13 - 12/14: <i>Precalculus</i> instructor<br></li>
+<li>8/12 - 5/13: <i>Business Calculus</i>, <i>Precalculus</i>, <i>College Algebra</i>, <i>Trigonometry</i>, <i>Liberal Arts Mathematics</i> proctor<br></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgheadline15" class="outline-3">
-<h3 id="orgheadline15">9/07 - 5/08: Teaching assistant, St. Mary's College of Maryland</h3>
-<div class="outline-text-3" id="text-orgheadline15">
+<div id="outline-container-orgd628349" class="outline-3">
+<h3 id="orgd628349">8/10 - 6/12: Junior high school instructor, Peace Corps Ghana, West Africa</h3>
+<div class="outline-text-3" id="text-orgd628349">
 <ul class="org-ul">
-<li>9/07 - 5/08: <i>Calculus I</i> recitation instructor<br ></li>
+<li>8/10 - 6/12: <i>Mathematics</i> instructor<br></li>
+<li>8/11 - 6/12: <i>Information and Communications Technology</i>, <i>English</i> instructor<br></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgabca758" class="outline-3">
+<h3 id="orgabca758">9/09 - 12/09: Tutor, Mathematical Science Learning Center, University of Illinois at Chicago</h3>
+<div class="outline-text-3" id="text-orgabca758">
+<ul class="org-ul">
+<li>9/09 - 12/09: <i>Linear algebra</i>, <i>Calculus I &amp; II</i> small-group tutor<br></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org846e8ec" class="outline-3">
+<h3 id="org846e8ec">9/07 - 5/08: Teaching assistant, St. Mary's College of Maryland</h3>
+<div class="outline-text-3" id="text-org846e8ec">
+<ul class="org-ul">
+<li>9/07 - 5/08: <i>Calculus I</i> recitation instructor<br></li>
 </ul>
 </div>
 </div>
 </div>
-<div id="outline-container-orgheadline20" class="outline-2">
-<h2 id="orgheadline20">Work Experience</h2>
-<div class="outline-text-2" id="text-orgheadline20">
-</div><div id="outline-container-orgheadline17" class="outline-3">
-<h3 id="orgheadline17">7/11 - 6/12: Community-based project manager, Peace Corps Ghana, West Africa</h3>
-<div class="outline-text-3" id="text-orgheadline17">
+<div id="outline-container-org2490bd7" class="outline-2">
+<h2 id="org2490bd7">Work Experience</h2>
+<div class="outline-text-2" id="text-org2490bd7">
+</div><div id="outline-container-org8b8f49c" class="outline-3">
+<h3 id="org8b8f49c">7/11 - 6/12: Peace Corps Volunteer, Ghana, West Africa</h3>
+<div class="outline-text-3" id="text-org8b8f49c">
 <ul class="org-ul">
-<li>Coordinated the proposal, international fundraising, construction, and regular operation of a junior high school computer lab that introduced computer-based learning to educators and students in a remote village. Resulted in the best-in-district performance on national high school entrance exams for subsequent years: 2013-16.<br ></li>
+<li>Coordinated the proposal, international fundraising, construction, and regular operation of a junior high school computer lab that introduced computer-based learning to educators and students in a remote village. Resulted in the best-in-district performance on national high school entrance exams for subsequent years: 2013-16.<br></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgheadline18" class="outline-3">
-<h3 id="orgheadline18">11/10 - 6/12: Editor, <i>Celebrate Languages Audio Project</i>, Peace Corps Ghana, West Africa</h3>
-<div class="outline-text-3" id="text-orgheadline18">
+<div id="outline-container-orgd320d19" class="outline-3">
+<h3 id="orgd320d19">11/10 - 6/12: Editor, <i>Celebrate Languages Audio Project</i>, Peace Corps Ghana, West Africa</h3>
+<div class="outline-text-3" id="text-orgd320d19">
 <ul class="org-ul">
-<li>Used Java program to automate language-learning lesson production from interviews with speakers of languages native to Ghana, West Africa.<br ></li>
+<li>Used Java program to automate language-learning lesson production from interviews with speakers of languages native to Ghana, West Africa.<br></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgheadline19" class="outline-3">
-<h3 id="orgheadline19">11/08 - 3/09: Computer assembler, FreeGeek, Chicago, IL</h3>
-<div class="outline-text-3" id="text-orgheadline19">
+<div id="outline-container-org4c1f1e9" class="outline-3">
+<h3 id="org4c1f1e9">11/08 - 3/09: Computer assembler, FreeGeek, Chicago, IL</h3>
+<div class="outline-text-3" id="text-org4c1f1e9">
 <ul class="org-ul">
-<li>Assembled PCs from donated parts and installed GNU Linux to offer low-cost computing to the economically disadvantaged.<br ></li>
+<li>Assembled PCs from donated parts and installed GNU Linux to offer low-cost computing to the economically disadvantaged.<br></li>
 </ul>
 </div>
 </div>
 </div>
-<div id="outline-container-orgheadline21" class="outline-2">
-<h2 id="orgheadline21">Technical Abilities</h2>
-<div class="outline-text-2" id="text-orgheadline21">
+<div id="outline-container-org2331f8e" class="outline-2">
+<h2 id="org2331f8e">Technical Abilities</h2>
+<div class="outline-text-2" id="text-org2331f8e">
 <ul class="org-ul">
-<li>Programming: C, C++, Fortran, Python, MATLAB, UNIX, Java, HTML, Javascript, CSS, \(\textstyle{\LaTeX}\), XPP, AUTO<br ></li>
-<li>Language: English (native), French (intermediate), Twi (intermediate)<br ></li>
+<li>Programming: C, C++, Fortran, Python, MATLAB, UNIX, Java, HTML, Javascript, CSS, \(\textstyle{\LaTeX}\), XPP, AUTO<br></li>
+<li>Language: English (native), French (intermediate), Twi (intermediate)<br></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgheadline22" class="outline-2">
-<h2 id="orgheadline22">Awards</h2>
-<div class="outline-text-2" id="text-orgheadline22">
+<div id="outline-container-org76d0599" class="outline-2">
+<h2 id="org76d0599">Awards</h2>
+<div class="outline-text-2" id="text-org76d0599">
 <ul class="org-ul">
-<li>4/16: Distinguished teaching assistant, Florida State University Mathematics<br ></li>
-<li>4/16: Graduate student poster contest 3<sup>rd</sup> place, Florida State University Mathematics<br ></li>
-<li>3/16: Travel award, SIAM Annual Meeting, Boston, MA<br ></li>
-<li>3/16: Travel award, Biology and Medicine through Mathematics conference, Richmond, VA<br ></li>
-<li>9/15: Travel award, Society for Mathematical Biology Annual Meeting, Atlanta, GA<br ></li>
-<li>6/15: <i>Evelyn and John Baugh Fund</i> Scholarship, Florida State University Mathematics<br ></li>
-<li>7/13 - 5/14: <i>Graduate Assistance in Areas of National Need</i> Fellow, U.S. Department of Education<br ></li>
-<li>12/05 &amp; 5/08: Dean's List, St. Mary's College of Maryland<br ></li>
-<li>9/04 - 5/08: Presidential Scholarship, St. Mary's College of Maryland<br ></li>
-<li>6/04: Eagle Scout, Boy Scouts of America<br ></li>
-<li>5/03 &amp; 5/04: <i>Magna Cum Laude</i>, National Latin Exam<br ></li>
+<li>4/16: Distinguished teaching assistant, Florida State University Mathematics<br></li>
+<li>4/16: Graduate student poster contest 3<sup>rd</sup> place, Florida State University Mathematics<br></li>
+<li>3/16: Travel award, SIAM Annual Meeting, Boston, MA<br></li>
+</ul>
+
+<ul class="org-ul">
+<li>7/13 - 5/14: <i>Graduate Assistance in Areas of National Need</i> Fellow, U.S. Department of Education<br></li>
+<li>12/05 &amp; 5/08: Dean's List, St. Mary's College of Maryland<br></li>
+<li>9/04 - 5/08: Presidential Scholarship, St. Mary's College of Maryland<br></li>
+<li>6/04: Eagle Scout, Boy Scouts of America<br></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgheadline23" class="outline-2">
-<h2 id="orgheadline23">Memberships</h2>
-<div class="outline-text-2" id="text-orgheadline23">
+<div id="outline-container-org2cda583" class="outline-2">
+<h2 id="org2cda583">Memberships</h2>
+<div class="outline-text-2" id="text-org2cda583">
 <ul class="org-ul">
-<li>12/14: Society for Mathematical Biology<br ></li>
-<li>12/13: Pi Mu Epsilon National Honorary Mathematical Society<br ></li>
-<li>9/13: Program for Instructional Excellence, Florida State University<br ></li>
-<li>4/13: Society for Industrial and Applied Mathematics<br ></li>
-<li>6/08: Mathematical Association of America<br ></li>
+<li>12/14: Society for Mathematical Biology<br></li>
+<li>12/13: Pi Mu Epsilon National Honorary Mathematical Society<br></li>
+<li>9/13: Program for Instructional Excellence, Florida State University<br></li>
+<li>4/13: Society for Industrial and Applied Mathematics<br></li>
+<li>6/08: Mathematical Association of America<br></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgheadline27" class="outline-2">
-<h2 id="orgheadline27">References</h2>
-<div class="outline-text-2" id="text-orgheadline27">
-</div><div id="outline-container-orgheadline24" class="outline-3">
-<h3 id="orgheadline24">Dr. Richard Bertram</h3>
-<div class="outline-text-3" id="text-orgheadline24">
+<div id="outline-container-org0ab67e0" class="outline-2">
+<h2 id="org0ab67e0">References</h2>
+<div class="outline-text-2" id="text-org0ab67e0">
+</div><div id="outline-container-orgc439ede" class="outline-3">
+<h3 id="orgc439ede">Dr. Richard Bertram</h3>
+<div class="outline-text-3" id="text-orgc439ede">
 <p>
-Biomathematics Program Director<br >
-Florida State University Mathematics<br >
-1017 Academic Way<br >
-Love Building Room 208<br >
-Tallahassee, FL 32306-4510<br >
-tel: (850) 644-7632<br >
-fax: (850) 644-4053<br >
-email: bertram@math.fsu.edu<br >
+Biomathematics Program Director<br>
+Florida State University Mathematics<br>
+1017 Academic Way<br>
+Love Building Room 208<br>
+Tallahassee, FL 32306-4510<br>
+tel: (850) 644-7632<br>
+fax: (850) 644-4053<br>
+email: bertram@math.fsu.edu<br>
 </p>
 </div>
 </div>
-<div id="outline-container-orgheadline25" class="outline-3">
-<h3 id="orgheadline25">Dr. Arthur Sherman</h3>
-<div class="outline-text-3" id="text-orgheadline25">
+<div id="outline-container-orgaeac892" class="outline-3">
+<h3 id="orgaeac892">Dr. Arthur Sherman</h3>
+<div class="outline-text-3" id="text-orgaeac892">
 <p>
-Laboratory of Biological Modeling Director<br >
-National Institutes of Health<br >
-12 South Dr. MSC 5621<br >
-Bethesda, MD 20892-5621<br >
-tel: (301) 496-4325<br >
-fax: (301) 402-0535<br >
-email: asherman@nih.gov<br >
+Laboratory of Biological Modeling Director<br>
+National Institutes of Health<br>
+12 South Dr. MSC 5621<br>
+Bethesda, MD 20892-5621<br>
+tel: (301) 496-4325<br>
+fax: (301) 402-0535<br>
+email: asherman@nih.gov<br>
 </p>
 </div>
 </div>
-<div id="outline-container-orgheadline26" class="outline-3">
-<h3 id="orgheadline26">Dr. Kyle Gallivan</h3>
-<div class="outline-text-3" id="text-orgheadline26">
+<div id="outline-container-org1f6c6ed" class="outline-3">
+<h3 id="org1f6c6ed">Dr. Kyle Gallivan</h3>
+<div class="outline-text-3" id="text-org1f6c6ed">
 <p>
-Applied Mathematics Program Director<br >
-Florida State University Mathematics<br >
-1017 Academic Way<br >
-Love Building Room 208<br >
-Tallahassee, FL 32306-4510<br >
-tel: (850) 645-0306<br >
-fax: (850) 644-4053<br >
-email: gallivan@math.fsu.edu<br >
+Applied Mathematics Program Director<br>
+Florida State University Mathematics<br>
+1017 Academic Way<br>
+Love Building Room 208<br>
+Tallahassee, FL 32306-4510<br>
+tel: (850) 645-0306<br>
+fax: (850) 644-4053<br>
+email: gallivan@math.fsu.edu<br>
 </p>
 </div>
 </div>

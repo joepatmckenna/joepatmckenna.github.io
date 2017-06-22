@@ -11,38 +11,45 @@ layout: default
                 {{ page.date | date: date_format }}
             </time>
             {% if page.author %}
-            • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
-            {% endif %}</p>
+            <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+                <span itemprop="name">{{ page.author }}
+                </span>
+            </span>
+            {% endif %}
+        </p>
     </header>
 
     <div class="post-content" itemprop="articleBody">
         {{ content }}
     </div>
 
-    {% if site.disqus.shortname %} {% include disqus_comments.html %} {% endif %}
+    {% if site.disqus.shortname %}
+    {% include disqus_comments.html %}
+    {% endif %}
+
+    {% if page.mathjax %}
+    {% include mathjax.html %}
+    {% endif %}
+
+    {% if page.pseudocode %}
+    {% include pseudocode.html %}
+    {% endif %}
+
+    {% if page.comments %}
+    {% include comments.html %}
+    {% endif %}
+
+    {% if page.css %}
+    {% for ss in page.css %}
+    <link rel="stylesheet" href="{{ ss }}" type="text/css">
+    {% endfor %}
+    {% endif %}
+
+    {% if page.js %}
+    {% for js in page.js %}
+    <script src="{{ js }}" type="text/javascript"></script>
+    {% endfor %}
+    {% endif %}
+
 </article>
-
-{% if page.mathjax %}
-{% include mathjax.html %}
-{% endif %}
-
-{% if page.pseudocode %}
-{% include pseudocode.html %}
-{% endif %}
-
-{% if page.comments %}
-{% include comments.html %}
-{% endif %}
-
-{% if page.css %}
-{% for ss in page.css %}
-<link rel="stylesheet" href="{{ ss }}" type="text/css">
-{% endfor %}
-{% endif %}
-
-{% if page.js %}
-{% for js in page.js %}
-<script src="{{ js }}" type="text/javascript"></script>
-{% endfor %}
-{% endif %}
 
