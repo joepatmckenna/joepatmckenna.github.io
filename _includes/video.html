@@ -1,4 +1,11 @@
-<video style="display: block; margin: 0 auto;" width="{{ include.width }}" height="{{ include.height }}" controls>
-    <source src="{{ include.src }}" type="video/mp4">
-    Your browser does not support the video tag.
-</video>
+{% assign width = include.width | times: 1.0 %}
+{% assign height = include.height | times: 1.0 %}
+{% assign paddingBottom = height | divided_by: width | times: 100 %}
+
+<div class="video-holder" style="padding-bottom: {{ paddingBottom }}%">
+    <iframe width="{{ include.width }}"
+            height="{{ include.height }}"
+            src="/assets/vid/{{ include.src }}"
+            frameborder="0"
+            allowfullscreen></iframe>
+</div>
