@@ -16,11 +16,12 @@
 title: joe mckenna
 email: joepatmckenna@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  computational biologist postdoc.
+  quantitative biology postdoc
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://joepatmckenna.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: joepatmckenna
 github_username:  joepatmckenna
+google_analytics: UA-43941575-2
 
 # Build settings
 markdown: kramdown 
