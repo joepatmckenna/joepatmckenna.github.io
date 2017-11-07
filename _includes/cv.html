@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2017-06-21 Wed 23:39 -->
+<!-- 2017-11-07 Tue 10:27 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Curriculum Vitae</title>
@@ -66,6 +66,7 @@
   pre.src-fortran:before { content: 'Fortran'; }
   pre.src-gnuplot:before { content: 'gnuplot'; }
   pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
   pre.src-java:before { content: 'Java'; }
   pre.src-js:before { content: 'Javascript'; }
   pre.src-latex:before { content: 'LaTeX'; }
@@ -177,10 +178,9 @@
   .org-svg { width: 90%; }
   /*]]>*/-->
 </style>
-<!-- <link rel="stylesheet" href="/assets/main.css"> -->
-<link rel="stylesheet" href="/assets/css/cv.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/cv.css">
 
-<script type="text/javascript" src="/assets/js/org-info.js">
+<script type="text/javascript" src="http://orgmode.org/org-info.js">
 /**
  *
  * @source: http://orgmode.org/org-info.js
@@ -188,7 +188,7 @@
  * @licstart  The following is the entire license notice for the
  *  JavaScript code in http://orgmode.org/org-info.js.
  *
- * Copyright (C) 2012-2013 Free Software Foundation, Inc.
+ * Copyright (C) 2012-2017 Free Software Foundation, Inc.
  *
  *
  * The JavaScript code in this tag is free software: you can
@@ -217,7 +217,7 @@
 @licstart  The following is the entire license notice for the
 JavaScript code in this tag.
 
-Copyright (C) 2012-2013 Free Software Foundation, Inc.
+Copyright (C) 2012-2017 Free Software Foundation, Inc.
 
 The JavaScript code in this tag is free software: you can
 redistribute it and/or modify it under the terms of the GNU
@@ -239,7 +239,7 @@ for the JavaScript code in this tag.
 */
 
 <!--/*--><![CDATA[/*><!--*/
-org_html_manager.set("TOC_DEPTH", "0");
+org_html_manager.set("TOC_DEPTH", "2");
 org_html_manager.set("LINK_HOME", "");
 org_html_manager.set("LINK_UP", "");
 org_html_manager.set("LOCAL_TOC", "0");
@@ -330,97 +330,101 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgc3f0ee9">Contact Information</a></li>
-<li><a href="#org32c0c73">Education</a>
+<li><a href="#org496c104">Contact Information</a></li>
+<li><a href="#orga57cb48">Education</a>
 <ul>
-<li><a href="#org7aa6b97">8/12 - 5/17: Ph.D. Mathematical Biology, Florida State University, GPA: 3.9</a></li>
-<li><a href="#org9a4dc61">8/04 - 5/08: B.A. Mathematics, St. Mary's College of Maryland, major GPA: 3.5</a></li>
-<li><a href="#org19f9b8d">9/09 - 12/09: Graduate non-degree, University of Illinois at Chicago, GPA: 4.0</a></li>
+<li><a href="#org82d7930">8/12 - 5/17: Ph.D. Mathematical Biology, Florida State University, GPA: 3.9</a></li>
+<li><a href="#org1654470">8/04 - 5/08: B.A. Mathematics, St. Mary's College of Maryland, major GPA: 3.5</a></li>
+<li><a href="#orgbde3598">9/09 - 12/09: Graduate non-degree, University of Illinois at Chicago, GPA: 4.0</a></li>
 </ul>
 </li>
-<li><a href="#orgdb437cc">Publications</a></li>
-<li><a href="#orgf67ce63">Research Experience</a>
+<li><a href="#org218ed14">Publications</a></li>
+<li><a href="#org354eb2f">Research Experience</a>
 <ul>
-<li><a href="#org050b93d">10/17 - present: Postdoctoral fellow, National Institutes of Health, Laboratory of Biological Modeling</a></li>
-<li><a href="#orgf177852">7/16 - 5/17: Research assistant, Florida State University</a></li>
-<li><a href="#orgdf9884e">5/14 - 8/14: Intern, National Institutes of Health, Laboratory of Biological Modeling</a></li>
+<li><a href="#org486cba7">10/17 - present: Postdoctoral fellow, National Institutes of Health, Laboratory of Biological Modeling</a></li>
+<li><a href="#org91474a7">7/16 - 5/17: Research assistant, Florida State University</a></li>
+<li><a href="#org63667a2">5/14 - 8/14: Intern, National Institutes of Health, Laboratory of Biological Modeling</a></li>
 </ul>
 </li>
-<li><a href="#org0e3451e">Conferences and Workshops</a></li>
-<li><a href="#org007343d">Teaching Experience</a>
+<li><a href="#org2d013e3">Conferences and Workshops</a></li>
+<li><a href="#orgb385122">Teaching Experience</a>
 <ul>
-<li><a href="#org41cfb88">8/12 - 7/16: Graduate teaching assistant, Florida State University</a></li>
-<li><a href="#orgd628349">8/10 - 6/12: Junior high school instructor, Peace Corps Ghana, West Africa</a></li>
-<li><a href="#orgabca758">9/09 - 12/09: Tutor, Mathematical Science Learning Center, University of Illinois at Chicago</a></li>
-<li><a href="#org846e8ec">9/07 - 5/08: Teaching assistant, St. Mary's College of Maryland</a></li>
+<li><a href="#org83b0bfd">8/12 - 7/16: Graduate teaching assistant, Florida State University</a></li>
+<li><a href="#org9559c9e">8/10 - 6/12: Junior high school instructor, Peace Corps Ghana, West Africa</a></li>
+<li><a href="#org435bc53">9/09 - 12/09: Tutor, Mathematical Science Learning Center, University of Illinois at Chicago</a></li>
+<li><a href="#org944b9f0">9/07 - 5/08: Teaching assistant, St. Mary's College of Maryland</a></li>
 </ul>
 </li>
-<li><a href="#org2490bd7">Work Experience</a>
+<li><a href="#org26f9874">Work Experience</a>
 <ul>
-<li><a href="#org8b8f49c">7/11 - 6/12: Peace Corps Volunteer, Ghana, West Africa</a></li>
-<li><a href="#orgd320d19">11/10 - 6/12: Editor, <i>Celebrate Languages Audio Project</i>, Peace Corps Ghana, West Africa</a></li>
-<li><a href="#org4c1f1e9">11/08 - 3/09: Computer assembler, FreeGeek, Chicago, IL</a></li>
+<li><a href="#orgb37c3eb">7/11 - 6/12: Peace Corps Volunteer, Ghana, West Africa</a></li>
+<li><a href="#orgf336663">11/10 - 6/12: Editor, <i>Celebrate Languages Audio Project</i>, Peace Corps Ghana, West Africa</a></li>
+<li><a href="#org9d55711">11/08 - 3/09: Computer assembler, FreeGeek, Chicago, IL</a></li>
 </ul>
 </li>
-<li><a href="#org2331f8e">Technical Abilities</a></li>
-<li><a href="#org76d0599">Awards</a></li>
-<li><a href="#org2cda583">Memberships</a></li>
-<li><a href="#org0ab67e0">References</a>
+<li><a href="#orga995377">Technical Abilities</a></li>
+<li><a href="#org1551fff">Awards</a></li>
+<li><a href="#org7e47da5">Memberships</a></li>
+<li><a href="#org05b72c1">References</a>
 <ul>
-<li><a href="#orgc439ede">Dr. Richard Bertram</a></li>
-<li><a href="#orgaeac892">Dr. Arthur Sherman</a></li>
-<li><a href="#org1f6c6ed">Dr. Kyle Gallivan</a></li>
+<li><a href="#org4c7e30d">Dr. Richard Bertram</a></li>
+<li><a href="#orga0d21e2">Dr. Arthur Sherman</a></li>
+<li><a href="#orgafe1d4d">Dr. Kyle Gallivan</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orgc3f0ee9" class="outline-2">
-<h2 id="orgc3f0ee9">Contact Information</h2>
-<div class="outline-text-2" id="text-orgc3f0ee9">
+<div id="outline-container-org496c104" class="outline-2">
+<h2 id="org496c104">Contact Information</h2>
+<div class="outline-text-2" id="text-org496c104">
 <p>
-3132 Clarendon Dr.<br>
-Annapolis, MD 21403<br>
-email: joepatmckenna@gmail.com<br>
+Laboratory of Biological Modeling, NIDDK, NIH<br>
+Building 12A, Room 4003<br>
+12 South Dr. MSC 5621<br>
+Bethesda, MD 20892-5621<br>
+email: joseph.mckenna@nih.gov<br>
 web: <a href="https://joepatmckenna.github.io">https://joepatmckenna.github.io</a><br>
 </p>
 </div>
 </div>
-<div id="outline-container-org32c0c73" class="outline-2">
-<h2 id="org32c0c73">Education</h2>
-<div class="outline-text-2" id="text-org32c0c73">
-</div><div id="outline-container-org7aa6b97" class="outline-3">
-<h3 id="org7aa6b97">8/12 - 5/17: Ph.D. Mathematical Biology, Florida State University, GPA: 3.9</h3>
-<div class="outline-text-3" id="text-org7aa6b97">
+<div id="outline-container-orga57cb48" class="outline-2">
+<h2 id="orga57cb48">Education</h2>
+<div class="outline-text-2" id="text-orga57cb48">
+</div>
+<div id="outline-container-org82d7930" class="outline-3">
+<h3 id="org82d7930">8/12 - 5/17: Ph.D. Mathematical Biology, Florida State University, GPA: 3.9</h3>
+<div class="outline-text-3" id="text-org82d7930">
 <ul class="org-ul">
 <li>Dissertation: <i>Insulin secretion rhythms: calcium regulation of &beta;-cell metabolism and rescue of islet oscillations</i><br></li>
 <li>Relevant coursework: Differential equations, Numerical analysis, Monte Carlo methods, Machine learning, Computational biology<br></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org9a4dc61" class="outline-3">
-<h3 id="org9a4dc61">8/04 - 5/08: B.A. Mathematics, St. Mary's College of Maryland, major GPA: 3.5</h3>
-<div class="outline-text-3" id="text-org9a4dc61">
+<div id="outline-container-org1654470" class="outline-3">
+<h3 id="org1654470">8/04 - 5/08: B.A. Mathematics, St. Mary's College of Maryland, major GPA: 3.5</h3>
+<div class="outline-text-3" id="text-org1654470">
 <ul class="org-ul">
 <li>Thesis: <i>Regular Polytopes and Symmetry</i><br></li>
 <li>GRE: Quantitative 167 (95%), Verbal 162 (90%)<br></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org19f9b8d" class="outline-3">
-<h3 id="org19f9b8d">9/09 - 12/09: Graduate non-degree, University of Illinois at Chicago, GPA: 4.0</h3>
-<div class="outline-text-3" id="text-org19f9b8d">
+<div id="outline-container-orgbde3598" class="outline-3">
+<h3 id="orgbde3598">9/09 - 12/09: Graduate non-degree, University of Illinois at Chicago, GPA: 4.0</h3>
+<div class="outline-text-3" id="text-orgbde3598">
 <ul class="org-ul">
 <li>Relevant coursework: Topology, Logic, \(\textstyle{\LaTeX}\)<br></li>
 </ul>
 </div>
 </div>
 </div>
-<div id="outline-container-orgdb437cc" class="outline-2">
-<h2 id="orgdb437cc">Publications</h2>
-<div class="outline-text-2" id="text-orgdb437cc">
+<div id="outline-container-org218ed14" class="outline-2">
+<h2 id="org218ed14">Publications</h2>
+<div class="outline-text-2" id="text-org218ed14">
 <ul class="org-ul">
+<li>E. Kim, R. Schenck, J. West, W. Cross, V. Harris, J. McKenna, H. Cho, E. Coker, S. Lee-Kramer, K. Tsai, E. Flores, C. D. Gatenbee, <i>Targeting the untargetable: predicting Pramlintide resistance using a neural network based cellular automata</i>, bioRxiv, 2017, <a href="http://dx.doi.org/10.1101/211383">10.1101/211383</a><br></li>
 <li>J. P. McKenna, R. Dhumpa, N Mukhitov, M. G. Roper, and R. Bertram, <i>Glucose oscillations can activate an endogenous oscillator in pancreatic islets</i>, PLOS Computational Biology, Vol 12(10), 2016, pp e1005143, <a href="http://dx.doi.org/10.1371/journal.pcbi.1005143">10.1371/journal.pcbi.1005143</a><br></li>
 <li>J. P. McKenna, J. Ha, M. J. Merrins, L. S. Satin, A. Sherman, and R. Bertram, <i>Calcium effects on ATP production and consumption have regulatory roles on oscillatory islet activity</i>, Biophysical Journal, Vol 110, Feb 2016, pp 733-742, <a href="http://dx.doi.org/10.1016/j.bpj.2015.11.3526">10.1016/j.bpj.2015.11.3526</a><br></li>
 <li>M. J. Merrins, C. Poudel, J. P. McKenna, J. Ha, A. Sherman, R. Bertram, and L. S. Satin, <i>Phase analysis of metabolic oscillations and membrane potential in pancreatic islet &beta;-cells</i>, Biophysical Journal, Vol 110, Feb 2016, pp 691-699, <a href="http://dx.doi.org/10.1016/j.bpj.2015.12.029">10.1016/j.bpj.2015.12.029</a><br></li>
@@ -430,27 +434,28 @@ web: <a href="https://joepatmckenna.github.io">https://joepatmckenna.github.io</
 </ul>
 </div>
 </div>
-<div id="outline-container-orgf67ce63" class="outline-2">
-<h2 id="orgf67ce63">Research Experience</h2>
-<div class="outline-text-2" id="text-orgf67ce63">
-</div><div id="outline-container-org050b93d" class="outline-3">
-<h3 id="org050b93d">10/17 - present: Postdoctoral fellow, National Institutes of Health, Laboratory of Biological Modeling</h3>
+<div id="outline-container-org354eb2f" class="outline-2">
+<h2 id="org354eb2f">Research Experience</h2>
+<div class="outline-text-2" id="text-org354eb2f">
 </div>
-<div id="outline-container-orgf177852" class="outline-3">
-<h3 id="orgf177852">7/16 - 5/17: Research assistant, Florida State University</h3>
-<div class="outline-text-3" id="text-orgf177852">
+<div id="outline-container-org486cba7" class="outline-3">
+<h3 id="org486cba7">10/17 - present: Postdoctoral fellow, National Institutes of Health, Laboratory of Biological Modeling</h3>
+</div>
+<div id="outline-container-org91474a7" class="outline-3">
+<h3 id="org91474a7">7/16 - 5/17: Research assistant, Florida State University</h3>
+<div class="outline-text-3" id="text-org91474a7">
 <ul class="org-ul">
 <li>Formed and analyzed a model of pancreatic &beta;-cells to better understand their role in diabetes. Specifically, investigated the importance of Ca<sup>2+</sup>-activation of mitochondria for maintaining normal oscillatory insulin release from &beta;-cells. Funding from NSF grant DMS 1612193.<br></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgdf9884e" class="outline-3">
-<h3 id="orgdf9884e">5/14 - 8/14: Intern, National Institutes of Health, Laboratory of Biological Modeling</h3>
+<div id="outline-container-org63667a2" class="outline-3">
+<h3 id="org63667a2">5/14 - 8/14: Intern, National Institutes of Health, Laboratory of Biological Modeling</h3>
 </div>
 </div>
-<div id="outline-container-org0e3451e" class="outline-2">
-<h2 id="org0e3451e">Conferences and Workshops</h2>
-<div class="outline-text-2" id="text-org0e3451e">
+<div id="outline-container-org2d013e3" class="outline-2">
+<h2 id="org2d013e3">Conferences and Workshops</h2>
+<div class="outline-text-2" id="text-org2d013e3">
 <ul class="org-ul">
 <li>5/17: Invited minisymposium talk, <i>State and parameter estimation in models of cellular electrical activity</i>, SIAM Conference on Dynamical Systems, Snowbird, UT<br></li>
 <li>3/17: Invited minisymposium talk, <i>Recent advances in experimentally-guided mathematical biology</i>, SIAM Southeastern Atlantic Section Conference, Tallahassee, FL<br></li>
@@ -466,12 +471,13 @@ web: <a href="https://joepatmckenna.github.io">https://joepatmckenna.github.io</
 </ul>
 </div>
 </div>
-<div id="outline-container-org007343d" class="outline-2">
-<h2 id="org007343d">Teaching Experience</h2>
-<div class="outline-text-2" id="text-org007343d">
-</div><div id="outline-container-org41cfb88" class="outline-3">
-<h3 id="org41cfb88">8/12 - 7/16: Graduate teaching assistant, Florida State University</h3>
-<div class="outline-text-3" id="text-org41cfb88">
+<div id="outline-container-orgb385122" class="outline-2">
+<h2 id="orgb385122">Teaching Experience</h2>
+<div class="outline-text-2" id="text-orgb385122">
+</div>
+<div id="outline-container-org83b0bfd" class="outline-3">
+<h3 id="org83b0bfd">8/12 - 7/16: Graduate teaching assistant, Florida State University</h3>
+<div class="outline-text-3" id="text-org83b0bfd">
 <ul class="org-ul">
 <li>5/16 - 7/16: <i>Trigonometry</i> proctor<br></li>
 <li>8/15 - 5/16: <i>Foundations of Computational Mathematics</i> (graduate level) recitation instructor<br></li>
@@ -483,72 +489,73 @@ web: <a href="https://joepatmckenna.github.io">https://joepatmckenna.github.io</
 </ul>
 </div>
 </div>
-<div id="outline-container-orgd628349" class="outline-3">
-<h3 id="orgd628349">8/10 - 6/12: Junior high school instructor, Peace Corps Ghana, West Africa</h3>
-<div class="outline-text-3" id="text-orgd628349">
+<div id="outline-container-org9559c9e" class="outline-3">
+<h3 id="org9559c9e">8/10 - 6/12: Junior high school instructor, Peace Corps Ghana, West Africa</h3>
+<div class="outline-text-3" id="text-org9559c9e">
 <ul class="org-ul">
 <li>8/10 - 6/12: <i>Mathematics</i> instructor<br></li>
 <li>8/11 - 6/12: <i>Information and Communications Technology</i>, <i>English</i> instructor<br></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgabca758" class="outline-3">
-<h3 id="orgabca758">9/09 - 12/09: Tutor, Mathematical Science Learning Center, University of Illinois at Chicago</h3>
-<div class="outline-text-3" id="text-orgabca758">
+<div id="outline-container-org435bc53" class="outline-3">
+<h3 id="org435bc53">9/09 - 12/09: Tutor, Mathematical Science Learning Center, University of Illinois at Chicago</h3>
+<div class="outline-text-3" id="text-org435bc53">
 <ul class="org-ul">
 <li>9/09 - 12/09: <i>Linear algebra</i>, <i>Calculus I &amp; II</i> small-group tutor<br></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org846e8ec" class="outline-3">
-<h3 id="org846e8ec">9/07 - 5/08: Teaching assistant, St. Mary's College of Maryland</h3>
-<div class="outline-text-3" id="text-org846e8ec">
+<div id="outline-container-org944b9f0" class="outline-3">
+<h3 id="org944b9f0">9/07 - 5/08: Teaching assistant, St. Mary's College of Maryland</h3>
+<div class="outline-text-3" id="text-org944b9f0">
 <ul class="org-ul">
 <li>9/07 - 5/08: <i>Calculus I</i> recitation instructor<br></li>
 </ul>
 </div>
 </div>
 </div>
-<div id="outline-container-org2490bd7" class="outline-2">
-<h2 id="org2490bd7">Work Experience</h2>
-<div class="outline-text-2" id="text-org2490bd7">
-</div><div id="outline-container-org8b8f49c" class="outline-3">
-<h3 id="org8b8f49c">7/11 - 6/12: Peace Corps Volunteer, Ghana, West Africa</h3>
-<div class="outline-text-3" id="text-org8b8f49c">
+<div id="outline-container-org26f9874" class="outline-2">
+<h2 id="org26f9874">Work Experience</h2>
+<div class="outline-text-2" id="text-org26f9874">
+</div>
+<div id="outline-container-orgb37c3eb" class="outline-3">
+<h3 id="orgb37c3eb">7/11 - 6/12: Peace Corps Volunteer, Ghana, West Africa</h3>
+<div class="outline-text-3" id="text-orgb37c3eb">
 <ul class="org-ul">
 <li>Coordinated the proposal, international fundraising, construction, and regular operation of a junior high school computer lab that introduced computer-based learning to educators and students in a remote village. Resulted in the best-in-district performance on national high school entrance exams for subsequent years: 2013-16.<br></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgd320d19" class="outline-3">
-<h3 id="orgd320d19">11/10 - 6/12: Editor, <i>Celebrate Languages Audio Project</i>, Peace Corps Ghana, West Africa</h3>
-<div class="outline-text-3" id="text-orgd320d19">
+<div id="outline-container-orgf336663" class="outline-3">
+<h3 id="orgf336663">11/10 - 6/12: Editor, <i>Celebrate Languages Audio Project</i>, Peace Corps Ghana, West Africa</h3>
+<div class="outline-text-3" id="text-orgf336663">
 <ul class="org-ul">
 <li>Used Java program to automate language-learning lesson production from interviews with speakers of languages native to Ghana, West Africa.<br></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org4c1f1e9" class="outline-3">
-<h3 id="org4c1f1e9">11/08 - 3/09: Computer assembler, FreeGeek, Chicago, IL</h3>
-<div class="outline-text-3" id="text-org4c1f1e9">
+<div id="outline-container-org9d55711" class="outline-3">
+<h3 id="org9d55711">11/08 - 3/09: Computer assembler, FreeGeek, Chicago, IL</h3>
+<div class="outline-text-3" id="text-org9d55711">
 <ul class="org-ul">
 <li>Assembled PCs from donated parts and installed GNU Linux to offer low-cost computing to the economically disadvantaged.<br></li>
 </ul>
 </div>
 </div>
 </div>
-<div id="outline-container-org2331f8e" class="outline-2">
-<h2 id="org2331f8e">Technical Abilities</h2>
-<div class="outline-text-2" id="text-org2331f8e">
+<div id="outline-container-orga995377" class="outline-2">
+<h2 id="orga995377">Technical Abilities</h2>
+<div class="outline-text-2" id="text-orga995377">
 <ul class="org-ul">
 <li>Programming: C, C++, Fortran, Python, MATLAB, UNIX, Java, HTML, Javascript, CSS, \(\textstyle{\LaTeX}\), XPP, AUTO<br></li>
 <li>Language: English (native), French (intermediate), Twi (intermediate)<br></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org76d0599" class="outline-2">
-<h2 id="org76d0599">Awards</h2>
-<div class="outline-text-2" id="text-org76d0599">
+<div id="outline-container-org1551fff" class="outline-2">
+<h2 id="org1551fff">Awards</h2>
+<div class="outline-text-2" id="text-org1551fff">
 <ul class="org-ul">
 <li>4/16: Distinguished teaching assistant, Florida State University Mathematics<br></li>
 <li>4/16: Graduate student poster contest 3<sup>rd</sup> place, Florida State University Mathematics<br></li>
@@ -563,9 +570,9 @@ web: <a href="https://joepatmckenna.github.io">https://joepatmckenna.github.io</
 </ul>
 </div>
 </div>
-<div id="outline-container-org2cda583" class="outline-2">
-<h2 id="org2cda583">Memberships</h2>
-<div class="outline-text-2" id="text-org2cda583">
+<div id="outline-container-org7e47da5" class="outline-2">
+<h2 id="org7e47da5">Memberships</h2>
+<div class="outline-text-2" id="text-org7e47da5">
 <ul class="org-ul">
 <li>12/14: Society for Mathematical Biology<br></li>
 <li>12/13: Pi Mu Epsilon National Honorary Mathematical Society<br></li>
@@ -575,12 +582,13 @@ web: <a href="https://joepatmckenna.github.io">https://joepatmckenna.github.io</
 </ul>
 </div>
 </div>
-<div id="outline-container-org0ab67e0" class="outline-2">
-<h2 id="org0ab67e0">References</h2>
-<div class="outline-text-2" id="text-org0ab67e0">
-</div><div id="outline-container-orgc439ede" class="outline-3">
-<h3 id="orgc439ede">Dr. Richard Bertram</h3>
-<div class="outline-text-3" id="text-orgc439ede">
+<div id="outline-container-org05b72c1" class="outline-2">
+<h2 id="org05b72c1">References</h2>
+<div class="outline-text-2" id="text-org05b72c1">
+</div>
+<div id="outline-container-org4c7e30d" class="outline-3">
+<h3 id="org4c7e30d">Dr. Richard Bertram</h3>
+<div class="outline-text-3" id="text-org4c7e30d">
 <p>
 Biomathematics Program Director<br>
 Florida State University Mathematics<br>
@@ -593,9 +601,9 @@ email: bertram@math.fsu.edu<br>
 </p>
 </div>
 </div>
-<div id="outline-container-orgaeac892" class="outline-3">
-<h3 id="orgaeac892">Dr. Arthur Sherman</h3>
-<div class="outline-text-3" id="text-orgaeac892">
+<div id="outline-container-orga0d21e2" class="outline-3">
+<h3 id="orga0d21e2">Dr. Arthur Sherman</h3>
+<div class="outline-text-3" id="text-orga0d21e2">
 <p>
 Laboratory of Biological Modeling Director<br>
 National Institutes of Health<br>
@@ -607,9 +615,9 @@ email: asherman@nih.gov<br>
 </p>
 </div>
 </div>
-<div id="outline-container-org1f6c6ed" class="outline-3">
-<h3 id="org1f6c6ed">Dr. Kyle Gallivan</h3>
-<div class="outline-text-3" id="text-org1f6c6ed">
+<div id="outline-container-orgafe1d4d" class="outline-3">
+<h3 id="orgafe1d4d">Dr. Kyle Gallivan</h3>
+<div class="outline-text-3" id="text-orgafe1d4d">
 <p>
 Applied Mathematics Program Director<br>
 Florida State University Mathematics<br>
