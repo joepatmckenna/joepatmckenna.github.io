@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    
+    <title>Normal forms of dynamical systems in Python &mdash; normal_forms 0.1 documentation</title>
+    
+    <link rel="stylesheet" type="text/css" href="_static/css/spc-bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="_static/css/spc-extend.css">
+    <link rel="stylesheet" href="_static/scipy.css" type="text/css" >
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" >
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="_static/js/copybutton.js"></script>
+    <link rel="index" title="Index" href="genindex.html" >
+    <link rel="search" title="Search" href="search.html" >
+    <link rel="top" title="normal_forms 0.1 documentation" href="#" >
+    <link rel="next" title="Normal forms" href="normal_forms.html" > 
+  </head>
+  <body>
+
+  <div class="container">
+    <div class="header">
+    </div>
+  </div>
+
+
+    <div class="container">
+      <div class="main">
+        
+	<div class="row-fluid">
+	  <div class="span12">
+	    <div class="spc-navbar">
+              
+    <ul class="nav nav-pills pull-left">
+        <li class="active"><a href="https://joepatmckenna.github.io">joe mckenna</a></li>
+        <li class="active"><a href="https://pypi.python.org/pypi/normal-forms/0.1">normal_forms</a></li>
+	 
+    </ul>
+              
+              
+    <ul class="nav nav-pills pull-right">
+      <li class="active">
+        <a href="genindex.html" title="General Index"
+           accesskey="I">index</a>
+      </li>
+      <li class="active">
+        <a href="py-modindex.html" title="Python Module Index"
+           >modules</a>
+      </li>
+      <li class="active">
+        <a href="normal_forms.html" title="Normal forms"
+           accesskey="N">next</a>
+      </li>
+    </ul>
+              
+	    </div>
+	  </div>
+	</div>
+        
+
+	<div class="row-fluid">
+      <div class="spc-rightsidebar span3">
+        <div class="sphinxsidebarwrapper">
+  <h4>Next topic</h4>
+  <p class="topless"><a href="normal_forms.html"
+                        title="next chapter">Normal forms</a></p>
+  <h3>This Page</h3>
+  <div>
+    <a href="_sources/index.rst.txt"
+       rel="nofollow">Show Source</a>
+  </div>
+<div class="this-page-menu">
+  <a href="/scipy/docs/scipy-docs/index.rst.rst">Edit page</a>
+</div>
+
+        </div>
+      </div>
+          <div class="span9">
+            
+        <div class="bodywrapper">
+          <div class="body" id="spc-section-body">
+            
+  <div class="section" id="normal-forms-of-dynamical-systems-in-python">
+<h1>Normal forms of dynamical systems in Python<a class="headerlink" href="#normal-forms-of-dynamical-systems-in-python" title="Permalink to this headline">¶</a></h1>
+<p>This document describes how to use <a class="reference external" href="https://pypi.python.org/pypi/normal-forms">a Python package</a> to compute normal forms of autonomous differential equations</p>
+<div class="math">
+\[\frac{dx}{dt} = f(x)\]</div>
+<p>where <span class="math">\(f:\mathbb{R}^n\rightarrow\mathbb{R}^n\)</span>.</p>
+<p>The first section of this documents presents some background and a few examples of normal forms, and the remaining sections present the Python classes that the main <a class="reference internal" href="docs/source/normal_forms.html#normal_forms.normal_form.normal_form" title="normal_forms.normal_form.normal_form"><code class="xref py py-class docutils literal"><span class="pre">normal_forms.normal_form.normal_form</span></code></a> class uses.</p>
+<p>The table of contents of this document is</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="normal_forms.html">Normal forms</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="normal_forms.html#background">Background</a></li>
+<li class="toctree-l2"><a class="reference internal" href="normal_forms.html#a-1-d-example-saddle-node-bifurcation">A 1-D example: saddle-node bifurcation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="normal_forms.html#a-2-d-example-duffing-s-equation">A 2-D example: Duffing’s equation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="jets.html">Taylor’s Series</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="jets.html#a-example">A <span class="math">\(\mathbb{R}\rightarrow\mathbb{R}\)</span> example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jets.html#id1">A <span class="math">\(\mathbb{R}\rightarrow\mathbb{R}^2\)</span> example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jets.html#id2">A <span class="math">\(\mathbb{R}^2\rightarrow\mathbb{R}\)</span> example</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="lie.html">Lie operators for vector fields</a></li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container container-navbar-bottom">
+      <div class="spc-navbar">
+        
+      </div>
+    </div>
+    <div class="container">
+    <div class="footer">
+    <div class="row-fluid">
+    <ul class="inline pull-left">
+      <li>
+        &copy; Copyright 2017, Joseph P. McKenna.
+      </li>
+      <li>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.6.5.
+      </li>
+    </ul>
+    </div>
+    </div>
+    </div>
+  </body>
+</html>

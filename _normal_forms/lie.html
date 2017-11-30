@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    
+    <title>Lie operators for vector fields &mdash; normal_forms 0.1 documentation</title>
+    
+    <link rel="stylesheet" type="text/css" href="_static/css/spc-bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="_static/css/spc-extend.css">
+    <link rel="stylesheet" href="_static/scipy.css" type="text/css" >
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" >
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="_static/js/copybutton.js"></script>
+    <link rel="index" title="Index" href="genindex.html" >
+    <link rel="search" title="Search" href="search.html" >
+    <link rel="top" title="normal_forms 0.1 documentation" href="index.html" >
+    <link rel="prev" title="Taylor’s Series" href="jets.html" > 
+  </head>
+  <body>
+
+  <div class="container">
+    <div class="header">
+    </div>
+  </div>
+
+
+    <div class="container">
+      <div class="main">
+        
+	<div class="row-fluid">
+	  <div class="span12">
+	    <div class="spc-navbar">
+              
+    <ul class="nav nav-pills pull-left">
+        <li class="active"><a href="https://joepatmckenna.github.io">joe mckenna</a></li>
+        <li class="active"><a href="https://pypi.python.org/pypi/normal-forms/0.1">normal_forms</a></li>
+	
+        <li class="active"><a href="index.html">normal_forms 0.1 documentation</a></li>
+	 
+    </ul>
+              
+              
+    <ul class="nav nav-pills pull-right">
+      <li class="active">
+        <a href="genindex.html" title="General Index"
+           accesskey="I">index</a>
+      </li>
+      <li class="active">
+        <a href="py-modindex.html" title="Python Module Index"
+           >modules</a>
+      </li>
+      <li class="active">
+        <a href="jets.html" title="Taylor’s Series"
+           accesskey="P">previous</a>
+      </li>
+    </ul>
+              
+	    </div>
+	  </div>
+	</div>
+        
+
+	<div class="row-fluid">
+      <div class="spc-rightsidebar span3">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="jets.html"
+                        title="previous chapter">Taylor’s Series</a></p>
+  <h3>This Page</h3>
+  <div>
+    <a href="_sources/lie.rst.txt"
+       rel="nofollow">Show Source</a>
+  </div>
+<div class="this-page-menu">
+  <a href="/scipy/docs/scipy-docs/lie.rst.rst">Edit page</a>
+</div>
+
+        </div>
+      </div>
+          <div class="span9">
+            
+        <div class="bodywrapper">
+          <div class="body" id="spc-section-body">
+            
+  <div class="section" id="lie-operators-for-vector-fields">
+<h1>Lie operators for vector fields<a class="headerlink" href="#lie-operators-for-vector-fields" title="Permalink to this headline">¶</a></h1>
+<p>In order to compute the normal form of an equation <span class="math">\(\dot{x}=f(x)\)</span>, the <a class="reference internal" href="docs/source/normal_forms.html#normal_forms.normal_form.normal_form" title="normal_forms.normal_form.normal_form"><code class="xref py py-class docutils literal"><span class="pre">normal_forms.normal_form.normal_form</span></code></a> class solves a sequence of equations <span class="math">\(L_1g_j=f_j-h_j\)</span> and applies a sequence of transformations <span class="math">\(e^{L_j}\)</span> to the <span class="math">\(k\)</span>-jet of <span class="math">\(f\)</span>, where <span class="math">\(L_1(\cdot)=[\cdot,f_1(x)]\)</span> and <span class="math">\(L_j(\cdot)=[\cdot,g_j(x)]\)</span> are the Lie brackets with particular homogenous polynomial vector fields <span class="math">\(f_1(x)=f'(x_0)x\)</span> or <span class="math">\(g_j(x)\)</span>. This package uses the Lie bracket for vector fields definition <span class="math">\([f(x),g(x)]=f'(x)g(x)-g'(x)f(x)\)</span>. The class that implements the Lie bracket with a particular polynomial vector field is <a class="reference internal" href="docs/source/normal_forms.html#normal_forms.lie_operator.lie_operator" title="normal_forms.lie_operator.lie_operator"><code class="xref py py-class docutils literal"><span class="pre">normal_forms.lie_operator.lie_operator</span></code></a>.</p>
+<p>Let <span class="math">\(\mathcal{V}^n_i\)</span> denote the space of <span class="math">\(n\)</span>-dim, degree <span class="math">\(i\)</span> polynomial vector fields, and let <span class="math">\(s(i)\)</span> denote the simplicial number <span class="math">\({n+i-1 \choose i}\)</span>. For any degree <span class="math">\(i\)</span>, the vector field <span class="math">\(f_i\in\mathcal{V}_i^n\)</span> may be represented as a <span class="math">\(ns(i)\)</span>-dim column vector, the operator <span class="math">\(L_j:\mathcal{V}_i^n\rightarrow\mathcal{V}_{i+j-1}^n\)</span> defined by <span class="math">\(L_j=[\cdot,g_j(x)]\)</span> may be represented as a <span class="math">\(ns(i+j-1)\times ns(i)\)</span> matrix, and <span class="math">\(L_j(f_i)\)</span> may be represented as the matrix-vector product.</p>
+<p>These representations depend on the choice of basis for <span class="math">\(\mathcal{V}^n\)</span>. This package implements a basis for <span class="math">\(\mathcal{V}_i^n\)</span> ordered first by coordinate then by multiindex. For example, the basis for <span class="math">\(\mathcal{V}^2_3\)</span> is</p>
+<div class="math">
+\[\begin{split}\left\{\begin{bmatrix}x_1^3\\0\end{bmatrix}, \begin{bmatrix}x_1^2x_2\\0\end{bmatrix} \begin{bmatrix}x_1x_2^2\\0\end{bmatrix} \begin{bmatrix}x_2^3\\0\end{bmatrix} \begin{bmatrix}0\\x_1^3\end{bmatrix} \begin{bmatrix}0\\x_1^2x_2\end{bmatrix} \begin{bmatrix}0\\x_1x_2^2\end{bmatrix} \begin{bmatrix}0\\x_2^3\end{bmatrix}\right\}.\end{split}\]</div>
+<p>The underlying list of multiindices, <span class="math">\((3,0), (2,1), (1,2), (0,3)\)</span> in the example, assumes a descending order according to a <em>dictionary</em> ordering, i.e.for two multiindices <span class="math">\(m=(m_1,\ldots,m_n)\)</span> and <span class="math">\(p=(p_1,\ldots,p_n)\)</span>, <span class="math">\(m&gt;p\)</span> if <span class="math">\(m_i=p_i\)</span> and <span class="math">\(m_j&gt;p_j\)</span>, for all <span class="math">\(i\)</span> and a particular <span class="math">\(j\)</span> such that <span class="math">\(0\leq i&lt;j\leq n\)</span>.</p>
+<p>For example, a vector field</p>
+<div class="math">
+\[\begin{split}\begin{bmatrix}c_{11}&amp;c_{12}&amp;c_{13}&amp;c_{14}\\c_{21}&amp;c_{22}&amp;c_{23}&amp;c_{24}\end{bmatrix}\begin{bmatrix}x_1^3\\x_1^2x_2\\x_1x_2^2\\x_2^3\end{bmatrix}\end{split}\]</div>
+<p>in <span class="math">\(\mathcal{V}_3^2\)</span> is represented as the column vector <span class="math">\(\begin{bmatrix}c_{11}&amp;c_{12}&amp;c_{13}&amp;c_{14}&amp;c_{21}&amp;c_{22}&amp;c_{23}&amp;c_{24}\end{bmatrix}^T\)</span>.</p>
+<p>And, the columns of the matrix representation of <span class="math">\(L_j:\mathcal{V}_i^n\rightarrow\mathcal{V}_{i+j-1}^n\)</span> are the column vector representations of <span class="math">\(L_j\)</span> applied to the basis of <span class="math">\(\mathcal{V}_i^n\)</span>. For example, let <span class="math">\(g_2(x_1,x_2)=\begin{bmatrix}x_1^2\\x_2^2\end{bmatrix}\)</span> and consider <span class="math">\(L_2:\mathcal{V}_3^2\rightarrow\mathcal{V}_4^2\)</span> defined by <span class="math">\(L_2(\cdot)=[\cdot,g_2(x)]\)</span>. Since</p>
+<div class="math">
+\[\begin{split}L_2(e_1) = e_1'(x)g_2(x)-g_2'(x)e_1(x) = \begin{bmatrix}3x_1^2&amp;0\\0&amp;0\end{bmatrix}\begin{bmatrix}x_1^2\\x_2^2\end{bmatrix}-\begin{bmatrix}2x_1&amp;0\\0&amp;2x_2\end{bmatrix}\begin{bmatrix}x_1^3\\0\end{bmatrix}=\begin{bmatrix}x_1^4\\0\end{bmatrix}\end{split}\]</div>
+<p>the first column of the matrix representation of <span class="math">\(L_2:\mathcal{V}_3^2\rightarrow\mathcal{V}_4^2\)</span> is <span class="math">\(\begin{bmatrix}1&amp;0&amp;0&amp;0&amp;0 &amp; 0&amp;0&amp;0&amp;0&amp;0\end{bmatrix}^T\)</span>.</p>
+<p>Finally, <span class="math">\(L_j(f_i)\)</span> is represented as a column vector computed by the appropriate matrix representation of <span class="math">\(L_j\)</span> times the column vector representation of <span class="math">\(f_i\)</span>.</p>
+<p>The <a class="reference internal" href="docs/source/normal_forms.html#normal_forms.lie_operator.lie_operator" title="normal_forms.lie_operator.lie_operator"><code class="xref py py-class docutils literal"><span class="pre">normal_forms.lie_operator.lie_operator</span></code></a> class is accessible from the top-level of this package. To create a <code class="docutils literal"><span class="pre">lie_operator</span></code> object, a vector field <code class="docutils literal"><span class="pre">g</span></code> as a <code class="docutils literal"><span class="pre">sympy.Matrix</span></code> and a list of <code class="docutils literal"><span class="pre">sympy.symbols</span></code> representing the variables <span class="math">\(x_1,\ldots,x_n\)</span> should be supplied. Once the <code class="docutils literal"><span class="pre">lie_operator</span></code> object is constructed, the matrix representation of its action on <span class="math">\(\mathcal{V}_j^n\)</span> can be accessed as index <code class="docutils literal"><span class="pre">j</span></code> of the object.</p>
+<div class="highlight-ipython"><div class="highlight"><pre><span></span><span class="n">In</span> <span class="p">[</span><span class="mi">1</span><span class="p">]:</span> <span class="kn">from</span> <span class="nn">normal_forms</span> <span class="kn">import</span> <span class="n">lie_operator</span>
+
+<span class="n">In</span> <span class="p">[</span><span class="mi">2</span><span class="p">]:</span> <span class="kn">import</span> <span class="nn">sympy</span>
+
+<span class="n">In</span> <span class="p">[</span><span class="mi">3</span><span class="p">]:</span> <span class="n">x</span> <span class="o">=</span> <span class="n">sympy</span><span class="o">.</span><span class="n">symbols</span><span class="p">(</span><span class="s1">&#39;x_1 x_2&#39;</span><span class="p">)</span>
+
+<span class="n">In</span> <span class="p">[</span><span class="mi">4</span><span class="p">]:</span> <span class="n">g2</span> <span class="o">=</span> <span class="n">sympy</span><span class="o">.</span><span class="n">Matrix</span><span class="p">([[</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">**</span><span class="mi">2</span><span class="p">],[</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">**</span><span class="mi">2</span><span class="p">]])</span>
+
+<span class="n">In</span> <span class="p">[</span><span class="mi">5</span><span class="p">]:</span> <span class="n">L2</span> <span class="o">=</span> <span class="n">lie_operator</span><span class="p">(</span><span class="n">g2</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+
+<span class="n">In</span> <span class="p">[</span><span class="mi">6</span><span class="p">]:</span> <span class="n">L2</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+<span class="n">Out</span><span class="p">[</span><span class="mi">6</span><span class="p">]:</span> 
+<span class="n">array</span><span class="p">([[</span> <span class="mf">1.</span><span class="p">,</span>  <span class="mf">0.</span><span class="p">,</span>  <span class="mf">0.</span><span class="p">,</span>  <span class="mf">0.</span><span class="p">,</span>  <span class="mf">0.</span><span class="p">,</span>  <span class="mf">0.</span><span class="p">,</span>  <span class="mf">0.</span><span class="p">,</span>  <span class="mf">0.</span><span class="p">],</span>
+       <span class="p">[</span> <span class="mf">0.</span><span class="p">,</span>  <span class="mf">0.</span><span class="p">,</span>  <span class="mf">0.</span><span class="p">,</span>  <span class="mf">0.</span><span class="p">,</span>  <span class="mf">0.</span><span class="p">,</span>  <span class="mf">0.</span><span class="p">,</span>  <span class="mf">0.</span><span class="p">,</span>  <span class="mf">0.</span><span class="p">],</span>
+       <span class="p">[</span> <span class="mf">0.</span><span class="p">,</span>  <span class="mf">1.</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.</span><span class="p">,</span>  <span class="mf">0.</span><span class="p">,</span>  <span class="mf">0.</span><span class="p">,</span>  <span class="mf">0.</span><span class="p">,</span>  <span class="mf">0.</span><span class="p">,</span>  <span class="mf">0.</span><span class="p">],</span>
+       <span class="p">[</span> <span class="mf">0.</span><span class="p">,</span>  <span class="mf">0.</span><span class="p">,</span>  <span class="mf">2.</span><span class="p">,</span> <span class="o">-</span><span class="mf">2.</span><span class="p">,</span>  <span class="mf">0.</span><span class="p">,</span>  <span class="mf">0.</span><span class="p">,</span>  <span class="mf">0.</span><span class="p">,</span>  <span class="mf">0.</span><span class="p">],</span>
+       <span class="p">[</span> <span class="mf">0.</span><span class="p">,</span>  <span class="mf">0.</span><span class="p">,</span>  <span class="mf">0.</span><span class="p">,</span>  <span class="mf">3.</span><span class="p">,</span>  <span class="mf">0.</span><span class="p">,</span>  <span class="mf">0.</span><span class="p">,</span>  <span class="mf">0.</span><span class="p">,</span>  <span class="mf">0.</span><span class="p">],</span>
+       <span class="p">[</span> <span class="mf">0.</span><span class="p">,</span>  <span class="mf">0.</span><span class="p">,</span>  <span class="mf">0.</span><span class="p">,</span>  <span class="mf">0.</span><span class="p">,</span>  <span class="mf">3.</span><span class="p">,</span>  <span class="mf">0.</span><span class="p">,</span>  <span class="mf">0.</span><span class="p">,</span>  <span class="mf">0.</span><span class="p">],</span>
+       <span class="p">[</span> <span class="mf">0.</span><span class="p">,</span>  <span class="mf">0.</span><span class="p">,</span>  <span class="mf">0.</span><span class="p">,</span>  <span class="mf">0.</span><span class="p">,</span> <span class="o">-</span><span class="mf">2.</span><span class="p">,</span>  <span class="mf">2.</span><span class="p">,</span>  <span class="mf">0.</span><span class="p">,</span>  <span class="mf">0.</span><span class="p">],</span>
+       <span class="p">[</span> <span class="mf">0.</span><span class="p">,</span>  <span class="mf">0.</span><span class="p">,</span>  <span class="mf">0.</span><span class="p">,</span>  <span class="mf">0.</span><span class="p">,</span>  <span class="mf">0.</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.</span><span class="p">,</span>  <span class="mf">1.</span><span class="p">,</span>  <span class="mf">0.</span><span class="p">],</span>
+       <span class="p">[</span> <span class="mf">0.</span><span class="p">,</span>  <span class="mf">0.</span><span class="p">,</span>  <span class="mf">0.</span><span class="p">,</span>  <span class="mf">0.</span><span class="p">,</span>  <span class="mf">0.</span><span class="p">,</span>  <span class="mf">0.</span><span class="p">,</span>  <span class="mf">0.</span><span class="p">,</span>  <span class="mf">0.</span><span class="p">],</span>
+       <span class="p">[</span> <span class="mf">0.</span><span class="p">,</span>  <span class="mf">0.</span><span class="p">,</span>  <span class="mf">0.</span><span class="p">,</span>  <span class="mf">0.</span><span class="p">,</span>  <span class="mf">0.</span><span class="p">,</span>  <span class="mf">0.</span><span class="p">,</span>  <span class="mf">0.</span><span class="p">,</span>  <span class="mf">1.</span><span class="p">]])</span>
+</pre></div>
+</div>
+<p>The <code class="docutils literal"><span class="pre">lie_operator</span></code> object can be evaluated by passing it a vector field in the form of a <code class="docutils literal"><span class="pre">sympy.Matrix</span></code> as an argument:</p>
+<div class="highlight-ipython"><div class="highlight"><pre><span></span><span class="n">In</span> <span class="p">[</span><span class="mi">7</span><span class="p">]:</span> <span class="n">f3</span> <span class="o">=</span> <span class="n">sympy</span><span class="o">.</span><span class="n">Matrix</span><span class="p">([[</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">**</span><span class="mi">3</span><span class="p">],[</span><span class="mi">0</span><span class="p">]])</span>
+
+<span class="n">In</span> <span class="p">[</span><span class="mi">8</span><span class="p">]:</span> <span class="n">L2</span><span class="p">(</span><span class="n">f3</span><span class="p">)</span>
+<span class="n">Out</span><span class="p">[</span><span class="mi">8</span><span class="p">]:</span> 
+<span class="n">Matrix</span><span class="p">([</span>
+<span class="p">[</span><span class="mf">1.0</span><span class="o">*</span><span class="n">x_1</span><span class="o">**</span><span class="mi">4</span><span class="p">],</span>
+<span class="p">[</span>         <span class="mi">0</span><span class="p">]])</span>
+</pre></div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container container-navbar-bottom">
+      <div class="spc-navbar">
+        
+      </div>
+    </div>
+    <div class="container">
+    <div class="footer">
+    <div class="row-fluid">
+    <ul class="inline pull-left">
+      <li>
+        &copy; Copyright 2017, Joseph P. McKenna.
+      </li>
+      <li>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.6.5.
+      </li>
+    </ul>
+    </div>
+    </div>
+    </div>
+  </body>
+</html>
