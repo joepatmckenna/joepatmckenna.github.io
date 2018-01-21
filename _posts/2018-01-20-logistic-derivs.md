@@ -80,7 +80,7 @@ The series gains only one new power of $f$ each time differentiation is applied 
 
 ### deferred proof
 
-#### eigendecomposition of $D_n$
+#### eigenpairs of $D_n$
 
 We will show by induction that $D_n$ has eigenvectors $v_{n,j}$, $j=0,\ldots,n$, with eigenvalues $j+1$. 
 
@@ -90,7 +90,7 @@ For the induction step, assume that $D_{k-1}$ has eigenvectors $v_{k-1,j}$, $j=0
 
 We have
 \begin{aligned}
-D_kv_{n,j} &= 
+D_kv_{k,j} &= 
 \begin{pmatrix} D_{k-1} & 0 \\\\ \begin{pmatrix} 0 & \cdots & 0 & -k \end{pmatrix} & k+1 \end{pmatrix}
 \begin{pmatrix} v_{k-1,j} \\\\ {k\choose j} \end{pmatrix} \\\\\\
 &= \begin{pmatrix} D_{k-1}v_{k-1,j} \\\\ -k{k-1\choose j}+(k+1){k\choose j} \end{pmatrix}.
