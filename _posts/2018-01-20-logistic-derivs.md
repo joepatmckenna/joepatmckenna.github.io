@@ -113,3 +113,5 @@ And, here's the Python script that produced the plot:
 {% highlight Python %}
 {% include logistic-derivs.py %}
 {% endhighlight %}
+
+Note this implementation becomes unstable at about $n=20$ because the terms in the above formula are alternating and grow rapidly in magnitude with $n$.

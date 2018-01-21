@@ -23,7 +23,7 @@ def df(n, x):
     return res
 
 
-x = np.linspace(-5, 5, 100)[:, np.newaxis].repeat(16, axis=1).T
+x = np.linspace(-5, 5, 1000)[:, np.newaxis].repeat(16, axis=1).T
 y = np.array([df(n, x[n]) for n in range(16)])
 
 fig, ax = plt.subplots(4, 4, figsize=(8, 6))
