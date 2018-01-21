@@ -2,25 +2,24 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-# logistic function
 def f(x):
+    """logistic function"""
     return 1.0 / (1.0 + np.exp(-x))
 
 
-# derivative of logistic function
 def df(n, x):
+    """nth derivative of logistic function"""
     # compute coeffs
     c = np.zeros((n + 1, n + 1), dtype=int)
     c[0, 0] = 1
-    for i in np.arange(1, n + 1):
-        for j in np.arange(n, -1, -1):
+    for i in range(1, n + 1):
+        for j in range(i, -1, -1):
             c[i, j] = ((j + 1) * c[i - 1, j] - j * c[i - 1, j - 1])
     # compute derivative as series
-    for i in np.arange(n + 1):
+    for i in range(n + 1):
         res = c[i, n] * f(x)
-        for j in np.arange(n - 1, -1, -1):
-            res = res + c[i, j]
-            res = res * f(x)
+        for j in range(n - 1, -1, -1):
+            res = f(x) * (c[i, j] + res)
     return res
 
 
