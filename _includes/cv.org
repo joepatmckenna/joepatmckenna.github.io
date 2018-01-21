@@ -1,0 +1,120 @@
+#+author: Joseph P. McKenna
+#+email: joseph.mckenna@nih.gov
+#+title: Curriculum Vitae
+#+options: *:t ::nil \n:t ^:t author:t date:t email:t num:nil timestamp:t toc:nil html-postamble:nil
+#+html_doctype: html5
+#+html_mathjax: font: Neo-Euler
+#+html_head: <link rel="stylesheet" type="text/css" href="/assets/css/cv.css">
+#+html_head: <script type="text/javascript" src="/assets/js/org-info.js"></script>
+#+subtitle: Joseph P. McKenna
+#+infojs_opt: view:showall sdepth:2 ltoc:nil mouse:#eee
+#+latex_class: cv
+
+* Contact Information
+Laboratory of Biological Modeling, NIDDK, NIH
+Building 12A, Room 4003
+12 South Dr. MSC 5621
+Bethesda, MD 20892-5621
+email: joseph.mckenna@nih.gov
+web: [[https://joepatmckenna.github.io]]
+* Education
+** 8/12 - 5/17: Ph.D. Mathematical Biology, Florida State University, GPA: 3.9
+- Dissertation: /Insulin secretion rhythms: calcium regulation of \beta-cell metabolism and rescue of islet oscillations/
+- Relevant coursework: Differential equations, Numerical analysis, Monte Carlo methods, Machine learning, Computational biology
+** 8/04 - 5/08: B.A. Mathematics, St. Mary's College of Maryland, major GPA: 3.5 
+- Thesis: /Regular Polytopes and Symmetry/
+- GRE: Quantitative 167 (95%), Verbal 162 (90%)
+** 9/09 - 12/09: Graduate non-degree, University of Illinois at Chicago, GPA: 4.0
+- Relevant coursework: Topology, Logic, $\textstyle{\LaTeX}$
+* Publications
+- E. Kim, R. Schenck, J. West, W. Cross, V. Harris, J. McKenna, H. Cho, E. Coker, S. Lee-Kramer, K. Tsai, E. Flores, C. D. Gatenbee, /Targeting the untargetable: predicting Pramlintide resistance using a neural network based cellular automata/, bioRxiv, 2017, [[http://dx.doi.org/10.1101/211383][10.1101/211383]] (preprint)
+- J. P. McKenna, R. Dhumpa, N Mukhitov, M. G. Roper, and R. Bertram, /Glucose oscillations can activate an endogenous oscillator in pancreatic islets/, PLOS Computational Biology, Vol 12(10), 2016, pp e1005143, [[http://dx.doi.org/10.1371/journal.pcbi.1005143][10.1371/journal.pcbi.1005143]]
+- J. P. McKenna, J. Ha, M. J. Merrins, L. S. Satin, A. Sherman, and R. Bertram, /Calcium effects on ATP production and consumption have regulatory roles on oscillatory islet activity/, Biophysical Journal, Vol 110, Feb 2016, pp 733-742, [[http://dx.doi.org/10.1016/j.bpj.2015.11.3526][10.1016/j.bpj.2015.11.3526]]
+- M. J. Merrins, C. Poudel, J. P. McKenna, J. Ha, A. Sherman, R. Bertram, and L. S. Satin, /Phase analysis of metabolic oscillations and membrane potential in pancreatic islet \beta-cells/, Biophysical Journal, Vol 110, Feb 2016, pp 691-699, [[http://dx.doi.org/10.1016/j.bpj.2015.12.029][10.1016/j.bpj.2015.12.029]]
+- J. P. McKenna, correct solution to /More and more balls in urns/ in American Mathematical Monthly, Vol 118(8), Oct 2011, pp 750-751, [[http://dx.doi.org/10.4169/amer.math.monthly.118.08.747][10.4169/amer.math.monthly.118.08.747]]
+- J. P. McKenna, correct solution to /Permutations with specified left-to-right maxima/ in Mathematics Magazine, Vol 84(2), Apr 2011, pp 153-154, [[http://dx.doi.org/10.4169/math.mag.84.2.150][10.4169/math.mag.84.2.150]]
+- J. P. McKenna, correct solution to /Counting block fountains of coins/ in Mathematics Magazine, Vol 83(4), Oct 2010, pp 305, [[http://www.jstor.org/stable/10.4169/mathmaga.83.4.0304a][10.4169/mathmaga.83.4.0304a]]
+* Research Experience
+** 10/17 - present: Postdoctoral fellow, National Institutes of Health, Laboratory of Biological Modeling
+- Developing software for simulating and analyzing single-cell RNA sequencing data.
+- Developing models to simulate fatty acid regulation by adipose tissue in different metabolic conditions.
+** 7/16 - 5/17: Research assistant, Florida State University
+- Analyzed a model of pancreatic \beta-cells to characterize loss of \beta-cell function in the context of diabetes pathogenesis. Investigated the role of Ca^{2+}-activation of mitochondria for maintaining normal oscillatory insulin release from \beta-cells. Funding from NSF grant DMS 1612193. 
+** 5/14 - 8/14: Intern, National Institutes of Health, Laboratory of Biological Modeling
+* Conferences and Workshops
+- 6/18 (planned): Contributed poster, /Inferring regulatory dynamics from scRNA-seq data/, q-bio Conference, Houston, TX
+- 5/17: Invited minisymposium talk, /State and parameter estimation in models of cellular electrical activity/, SIAM Conference on Dynamical Systems, Snowbird, UT
+- 3/17: Invited minisymposium talk, /Recent advances in experimentally-guided mathematical biology/, SIAM Southeastern Atlantic Section Conference, Tallahassee, FL
+- 3/17: Contributed poster, /Dynamic neuron networks with Fitzhugh-Nagumo nodes/, SIAM Southeastern Atlantic Section Conference, Tallahassee, FL
+- 2/17: Contributed poster, /Markov chain Monte Carlo optimization for fitting excitable cell current-voltage relations to voltage clamp data/, SIAM Conference on Computational Science and Engineering, Atlanta, GA
+- 11/16: Invited workshop participant, /Integrated mathematical oncology 6^{th} annual workshop: resistance/, Moffitt Cancer Center, Tampa, FL 
+- 10/16: Invited workshop participant, /Dynamical systems and data analysis in neuroscience: bridging the gap/, Mathematical Biosciences Institute, Columbus, OH
+- 7/16: Invited minisymposium talk, /Modeling insulin and glucagon secretion and their roles in diabetes/, SIAM Annual Conference, Boston, MA
+- 5/16: Contributed poster, /Reducing a conductance-based neuron model to normal form/, Biology and Medicine through Mathematics Conference, Richmond, VA
+- 7/15: Invited minisymposium talk, /Modeling pancreatic islets and diabetes from the cellular level to the whole body/, Society for Mathematical Biology Annual Meeting, Atlanta, GA
+- 05/15: Contributed poster, /Rescuing the Dual Oscillator Model for \beta-cells from inconvenient data/, Midwest Islet Club Annual Meeting, Chicago, IL
+- 8/14: Invited poster, /Mathematical model of metabolic oscillations in pancreatic \beta-cells/, NIH Summer Intern Poster Session, Bethesda, MD
+* Teaching Experience
+** 8/12 - 7/16: Graduate teaching assistant, Florida State University
+- 5/16 - 7/16: /Trigonometry/ proctor
+- 8/15 - 5/16: /Foundations of Computational Mathematics/ (graduate level) recitation instructor
+- 8/15 - 12/15: /Applied Computational Mathematics/ (graduate level) instructor
+- 5/15 - 8/15: /Calculus II/ instructor
+- 1/14 - 8/15: /Calculus I/ instructor 
+- 8/13 - 12/14: /Precalculus/ instructor
+- 8/12 - 5/13: /Business Calculus/, /Precalculus/, /College Algebra/, /Trigonometry/, /Liberal Arts Mathematics/ proctor
+** 8/10 - 6/12: Junior high school instructor, Peace Corps Ghana, West Africa
+- 8/10 - 6/12: /Mathematics/ instructor
+- 8/11 - 6/12: /Information and Communications Technology/, /English/ instructor
+** 9/09 - 12/09: Tutor, Mathematical Science Learning Center, University of Illinois at Chicago
+- 9/09 - 12/09: /Linear algebra/, /Calculus I & II/ small-group tutor
+** 9/07 - 5/08: Teaching assistant, St. Mary's College of Maryland
+- 9/07 - 5/08: /Calculus I/ recitation instructor
+* Work Experience
+** 7/11 - 6/12: Peace Corps Volunteer, Ghana, West Africa
+- Coordinated the proposal, international fundraising, construction, and regular operation of a junior high school computer lab that introduced computer-based learning to educators and students in a remote village. Resulted in the best-in-district performance on national high school entrance exams for subsequent years: 2013-16.
+** 11/10 - 6/12: Editor, /Celebrate Languages Audio Project/, Peace Corps Ghana, West Africa
+- Used Java program to automate language-learning lesson production from interviews with speakers of languages native to Ghana, West Africa.
+** 11/08 - 3/09: Computer assembler, FreeGeek, Chicago, IL
+- Assembled PCs from donated parts and installed GNU Linux to offer low-cost computing to the economically disadvantaged.
+* Technical Abilities
+- Programming: Python, R, C, C++, Fortran, MATLAB, UNIX, Java, HTML, Javascript, CSS, $\textstyle{\LaTeX}$, XPP, AUTO
+- Language: English (native), French (intermediate), Twi (intermediate)
+* Awards
+- 4/16: Distinguished teaching assistant, Florida State University Mathematics
+- 4/16: Graduate student poster contest 3^{rd} place, Florida State University Mathematics
+- 3/16: Travel award, SIAM Annual Meeting, Boston, MA
+- 7/13 - 5/14: /Graduate Assistance in Areas of National Need/ Fellow, U.S. Department of Education
+- 12/05 & 5/08: Dean's List, St. Mary's College of Maryland
+- 9/04 - 5/08: Presidential Scholarship, St. Mary's College of Maryland
+- 6/04: Eagle Scout, Boy Scouts of America
+# - 3/16: Travel award, Biology and Medicine through Mathematics conference, Richmond, VA
+# - 9/15: Travel award, Society for Mathematical Biology Annual Meeting, Atlanta, GA
+# - 6/15: /Evelyn and John Baugh Fund/ Scholarship, Florida State University Mathematics
+# - 5/03 & 5/04: /Magna Cum Laude/, National Latin Exam
+* References
+** Dr. Vipul Periwal
+Laboratory of Biological Modeling Director
+National Institutes of Health
+12 South Dr. MSC 5621
+Bethesda, MD 20892-5621
+tel: (240) 274-9150
+email: vipulp@mail.nih.gov
+** Dr. Richard Bertram
+Biomathematics Program Director
+Florida State University Mathematics
+1017 Academic Way
+Love Building Room 208
+Tallahassee, FL 32306-4510
+tel: (850) 644-7632
+fax: (850) 644-4053
+email: bertram@math.fsu.edu
+** Dr. Kyle Gallivan
+Applied Mathematics Program Director
+Florida State University Mathematics
+1017 Academic Way
+Love Building Room 208
+Tallahassee, FL 32306-4510
+tel: (850) 645-0306
+fax: (850) 644-4053
+email: gallivan@math.fsu.edu
