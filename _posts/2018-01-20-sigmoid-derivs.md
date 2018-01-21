@@ -1,19 +1,19 @@
 ---
 layout: post
-title: derivatives of the logistic function
+title: derivatives of the sigmoid function
 date: 2018-01-20
 categories: 
 - calculus
 - derivative
-- logistic function
+- sigmoid function
 - linear albegra
 mathjax: true
 comments: true
 ---
 
-The logistic function $f(x)={1 \over 1+e^{-x}}$ is useful in a variety of applications particularly because it can be used to map an unbounded real value into $[0,1]$. $f(t)$ is used as the prototypical model of population growth with a carrying capacity. The logistic function can be used as the so-called activation functions that compactify inputs to hidden layers of neural networks. I used the function extensively in my own research to model the probability that an ion channel on an electrically excitable cell's membrane opens in responses to a voltage change.
+The sigmoid function $f(x)={1 \over 1+e^{-x}}$ is useful in a variety of applications particularly because it can be used to map an unbounded real value into $[0,1]$. As the solution to $y'=y(1-y)$, $y(0)=1/2$, it is used as the prototypical model of population growth with a carrying capacity. It can be used as a so-called activation function that compactifies inputs to nodes in a neural network. I used the function extensively in my own research to model the probability that an ion channel on an electrically excitable cell's membrane opens in responses to a voltage change.
 
-The logistic function is smooth, i.e. has infinitely many continuous derivatives. Just for kicks, I asked whether I could come up with a formula for the $n^{th}$ derivative $f^{(n)}$. I was able to, and the key observations to my approach were
+The sigmoid function is smooth, i.e. has infinitely many continuous derivatives. Just for kicks, I asked whether I could come up with a formula for the $n^{th}$ derivative $f^{(n)}$. I was able to, and the key observations to my approach were
 
 - $f^{(n)}$ can be written as a series with coefficients multiplying powers of $f$, and
 
@@ -49,7 +49,7 @@ $$v_{n,j}=\begin{pmatrix}{0\choose j}&{1\choose j}&\cdots&{n\choose j}\end{pmatr
 
 with corresponding eigenvalues $j+1$, with the convention ${i\choose j}=0$ if $i<j$. I'll defer the proof of this claim to after the current proof. Now, we realize the utility of eigendecompositions for powering.
 
-The logistic function $f$ is represented by the alternating sum of the eigenvectors
+The sigmoid function $f$ is represented by the alternating sum of the eigenvectors
 
 $$\begin{pmatrix}1&0&\cdots&0\end{pmatrix}^T = \sum_{j=0}^n(-1)^jv_{n,j}.$$
 
@@ -86,7 +86,7 @@ We will show by induction that $D_n$ has eigenvectors $v_{n,j}$, $j=0,\ldots,n$,
 
 The $n=0$ base case is to confirm that the scalar $1$ has an eigenvector $1$ with eigenvalue $1$, which is obvious.
 
-For the induction step, assume that $D_{k-1}$ has eigenvectors $v_{k-1,j}$, $j=0,\ldots,k>0$, with eigenvalues $j+1$.
+For the induction step, assume for $k>0$ that $D_{k-1}$ has eigenvectors $v_{k-1,j}$, $j=0,\ldots,k-1$, with eigenvalues $j+1$.
 
 We have
 \begin{aligned}
@@ -104,14 +104,14 @@ so that the bottom is $(j+1){k\choose j}$. Thus, $D_kv_{k,j}=(j+1)v_{k,j}$.
 
 ### plots
 
-Here's a plot of the derivatives of the logistic function using the above formula:
+Here's a plot of the derivatives of the sigmoid function using the above formula:
 
-![Derivatives of the logistic function]({{ "/assets/img/logistic-derivs.png" | absolute_url }})
+![Derivatives of the sigmoid function]({{ "/assets/img/sigmoid-derivs.png" | absolute_url }})
 
 And, here's the Python script that produced the plot:
 
 {% highlight Python %}
-{% include logistic-derivs.py %}
+{% include sigmoid-derivs.py %}
 {% endhighlight %}
 
 Note this implementation becomes unstable at about $n=20$ because the terms in the above formula are alternating and grow rapidly in magnitude with $n$.

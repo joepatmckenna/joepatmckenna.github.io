@@ -3,12 +3,12 @@ import matplotlib.pyplot as plt
 
 
 def f(x):
-    """logistic function"""
+    """sigmoid function"""
     return 1.0 / (1.0 + np.exp(-x))
 
 
 def df(n, x):
-    """nth derivative of logistic function"""
+    """nth derivative of sigmoid function"""
     # compute coeffs
     c = np.zeros(n + 1, dtype=int)
     c[0] = 1
@@ -29,4 +29,4 @@ fig, ax = plt.subplots(4, 4, figsize=(8, 6))
 for xi, yi, i in zip(x, y, range(16)):
     ax[i / 4, i % 4].plot(xi, yi, 'k-', label="n = %i" % (i))
     ax[i / 4, i % 4].legend()
-plt.savefig('../assets/img/logistic-derivs.png')
+plt.savefig('../assets/img/sigmoid-derivs.png')
