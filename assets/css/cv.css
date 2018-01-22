@@ -1,14 +1,12 @@
-/* @import "minima"; */
-
-body {
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    font-weight: normal;
-    width:960px;
-    padding: 0;
-    border: 0;
-    margin: auto;
-    line-height:1.3em;
-}
+/* body { */
+/*     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; */
+/*     font-weight: normal; */
+/*     width:960px; */
+/*     padding: 0; */
+/*     border: 0; */
+/*     margin: auto; */
+/*     line-height:1.3em; */
+/* } */
 h1, h2, h3, h4, p {
     font-weight: normal;
 }
