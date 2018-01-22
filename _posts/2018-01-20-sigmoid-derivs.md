@@ -106,7 +106,7 @@ so that the bottom is $(j+1){k\choose j}$. Thus, $D_kv_{k,j}=(j+1)v_{k,j}$.
 
 Here's a plot of the derivatives of the sigmoid function using the above formula:
 
-![Derivatives of the sigmoid function]({{ "/assets/img/sigmoid-derivs.png" | absolute_url }})
+![Derivatives of the sigmoid function]({{ "/assets/img/sigmoid-derivs.png" | absolute_url }}){: .center-image}
 
 And, here's the Python script that produced the plot:
 
