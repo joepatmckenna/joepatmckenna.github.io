@@ -98,7 +98,11 @@ D_kv_{k,j} &=
 
 The top of this block vector is $(j+1)v_{k-1,j}$ by the induction step, and the first term of the bottom can be rearranged
 
-$$-k{k-1\choose j}=-{k(k-1)! \over j!(k-j-1)!}=-(k-j){k!\over j!(k-j)!}=(j-k){k\choose j}$$
+\begin{aligned}
+-k{k-1\choose j} &= -{k(k-1)! \over j!(k-j-1)!} \\\\\\
+&= -(k-j){k!\over j!(k-j)!} \\\\\\
+&= (j-k){k\choose j}
+\end{aligned}
 
 so that the bottom is $(j+1){k\choose j}$. Thus, $D_kv_{k,j}=(j+1)v_{k,j}$.
 
