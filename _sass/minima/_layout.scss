@@ -119,19 +119,21 @@
 .social-media-list {
   list-style: none;
   margin-left: 0;
+  float:right;
+  @include relative-font-size(1.25);
 }
 
 .footer-col-wrapper {
   @include relative-font-size(0.9375);
   color: $grey-color;
-  margin-left: -$spacing-unit / 2;
+  margin-right: -$spacing-unit / 2;
   @extend %clearfix;
 }
 
 .footer-col {
   float: left;
   margin-bottom: $spacing-unit / 2;
-  padding-left: $spacing-unit / 2;
+  padding-right: $spacing-unit / 2;
   width: -webkit-calc(100% - (#{$spacing-unit} / 2));
   width:         calc(100% - (#{$spacing-unit} / 2));
 }
@@ -156,7 +158,7 @@
   .footer-col {
     float: left;
     margin-bottom: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
+    padding-right: $spacing-unit / 2;
     width: -webkit-calc(100% - (#{$spacing-unit} / 2));
     width:         calc(100% - (#{$spacing-unit} / 2));
   }
@@ -179,8 +181,6 @@
     width:         calc(100% - (#{$spacing-unit} / 2));
   }
 }
-
-
 
 /**
  * Page content
