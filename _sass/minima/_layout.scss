@@ -24,6 +24,18 @@
   }
 }
 
+.social-media-wrapper {
+  line-height: $base-line-height * $base-font-size * 2.25;
+  margin-bottom: 0;
+  float: left;
+  /* margin-left: $spacing-unit; */
+}
+
+.social-media-list {
+  @include relative-font-size(1.25);
+  list-style: none;
+}
+
 .site-nav {
   float: right;
   line-height: $base-line-height * $base-font-size * 2.25;
@@ -115,13 +127,6 @@
   margin-bottom: $spacing-unit / 2;
 }
 
-.contact-list,
-.social-media-list {
-  list-style: none;
-  margin-left: 0;
-  float:right;
-  @include relative-font-size(1.25);
-}
 
 .footer-col-wrapper {
   @include relative-font-size(0.9375);
