@@ -4,10 +4,10 @@
 #+options: *:t ::nil \n:t ^:t author:t date:t email:t num:nil timestamp:t toc:nil html-postamble:nil
 #+html_doctype: html5
 #+html_mathjax: font: Neo-Euler
-#+html_head: <link rel="stylesheet" type="text/css" href="/assets/css/cv.css">
-#+html_head: <script type="text/javascript" src="/assets/js/org-info.js"></script>
-#+subtitle: Joseph P. McKenna
-#+infojs_opt: view:showall sdepth:2 ltoc:nil mouse:#eee
+# #+html_head: <link rel="stylesheet" type="text/css" href="/assets/css/cv.css">
+# #+html_head: <script type="text/javascript" src="/assets/js/org-info.js"></script>
+# #+infojs_opt: view:showall sdepth:2 ltoc:nil mouse:#eee
+# #+subtitle: Joseph P. McKenna
 #+latex_class: cv
 
 * Contact Information

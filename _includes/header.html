@@ -2,7 +2,7 @@
 
     <div class="wrapper">
         {% assign default_paths = site.pages | map: "path" %} {% assign page_paths = site.header_pages | default: default_paths %}
-        <a class="site-title" href="{{ " / " | relative_url }}">{{ site.title | escape }}</a>
+        <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
 
         <div class="social-media-wrapper">
             <ul class="social-media-list">
@@ -48,5 +48,6 @@
         {% endif %}
     </div>
 </header>
+
 
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
