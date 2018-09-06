@@ -19,7 +19,7 @@ email: joseph.mckenna@nih.gov
 web: [[https://joepatmckenna.github.io]]
 * Education
 ** 10/17 - 2/18: Specialization in Data Science, Johns Hopkins University on Coursera
-- 10 courses on topics such as R programming, cleaning data, statistical inference, regression models, machine learning, and data products
+ - 10 courses on topics such as R programming, cleaning data, statistical inference, regression models, machine learning, and data products
 ** 8/12 - 5/17: Ph.D. Mathematical Biology, Florida State University, GPA: 3.9
 - Dissertation: /Insulin secretion rhythms: calcium regulation of \beta-cell metabolism and rescue of islet oscillations/
 - Relevant coursework: Differential equations, Numerical analysis, Monte Carlo methods, Machine learning, Computational biology
@@ -29,13 +29,14 @@ web: [[https://joepatmckenna.github.io]]
 ** 9/09 - 12/09: Graduate non-degree, University of Illinois at Chicago, GPA: 4.0
 - Relevant coursework: Topology, Logic, $\textstyle{\LaTeX}$
 * Research Experience
-** 10/17 - present: Postdoctoral fellow, National Institutes of Health, Laboratory of Biological Modeling
+** 10/17 - 8/18: Postdoctoral fellow, National Institutes of Health, Laboratory of Biological Modeling
 - Developing software for simulating and analyzing single-cell RNA sequencing data.
 - Developing models to simulate fatty acid regulation by adipose tissue in different metabolic conditions.
 ** 7/16 - 5/17: Research assistant, Florida State University
 - Analyzed a model of pancreatic \beta-cells to characterize loss of \beta-cell function in the context of diabetes pathogenesis. Investigated the role of Ca^{2+}-activation of mitochondria for maintaining normal oscillatory insulin release from \beta-cells. Funding from NSF grant DMS 1612193. 
 ** 5/14 - 8/14: Intern, National Institutes of Health, Laboratory of Biological Modeling
 * Publications
+- J. P. McKenna, R. Bertram, /Fast-slow analysis of the integrated oscillator model for pancreatic \beta-cells/, Journal of Theoretical Biology, in press, https://doi.org/10.1016/j.jtbi.2018.08.029
 - E. Kim, R. Schenck, J. West, W. Cross, V. Harris, J. McKenna, H. Cho, E. Coker, S. Lee-Kramer, K. Tsai, E. Flores, C. D. Gatenbee, /Targeting the untargetable: predicting Pramlintide resistance using a neural network based cellular automata/, bioRxiv, 2017, [[http://dx.doi.org/10.1101/211383][10.1101/211383]] (preprint)
 - J. P. McKenna, R. Dhumpa, N Mukhitov, M. G. Roper, and R. Bertram, /Glucose oscillations can activate an endogenous oscillator in pancreatic islets/, PLOS Computational Biology, Vol 12(10), 2016, pp e1005143, [[http://dx.doi.org/10.1371/journal.pcbi.1005143][10.1371/journal.pcbi.1005143]]
 - J. P. McKenna, J. Ha, M. J. Merrins, L. S. Satin, A. Sherman, and R. Bertram, /Calcium effects on ATP production and consumption have regulatory roles on oscillatory islet activity/, Biophysical Journal, Vol 110, Feb 2016, pp 733-742, [[http://dx.doi.org/10.1016/j.bpj.2015.11.3526][10.1016/j.bpj.2015.11.3526]]
@@ -44,7 +45,7 @@ web: [[https://joepatmckenna.github.io]]
 - J. P. McKenna, correct solution to /Permutations with specified left-to-right maxima/ in Mathematics Magazine, Vol 84(2), Apr 2011, pp 153-154, [[http://dx.doi.org/10.4169/math.mag.84.2.150][10.4169/math.mag.84.2.150]]
 - J. P. McKenna, correct solution to /Counting block fountains of coins/ in Mathematics Magazine, Vol 83(4), Oct 2010, pp 305, [[http://www.jstor.org/stable/10.4169/mathmaga.83.4.0304a][10.4169/mathmaga.83.4.0304a]]
 * Conferences and Workshops
-- 6/18 (planned): Contributed poster, /Inferring regulatory dynamics from scRNA-seq data/, q-bio Conference, Houston, TX
+- 6/18: Contributed poster, /Large-scale model inference inspired by statistical physics with applications to language processing and structural biology/, q-bio Conference, Houston, TX
 - 5/17: Invited minisymposium talk, /State and parameter estimation in models of cellular electrical activity/, SIAM Conference on Dynamical Systems, Snowbird, UT
 - 3/17: Invited minisymposium talk, /Recent advances in experimentally-guided mathematical biology/, SIAM Southeastern Atlantic Section Conference, Tallahassee, FL
 - 3/17: Contributed poster, /Dynamic neuron networks with Fitzhugh-Nagumo nodes/, SIAM Southeastern Atlantic Section Conference, Tallahassee, FL
@@ -73,6 +74,7 @@ web: [[https://joepatmckenna.github.io]]
 ** 9/07 - 5/08: Teaching assistant, St. Mary's College of Maryland
 - 9/07 - 5/08: /Calculus I/ recitation instructor
 * Work Experience
+** 8/18 - present: Data Scientist, Department of Defense
 ** 7/11 - 6/12: Peace Corps Volunteer, Ghana, West Africa
 - Coordinated the proposal, international fundraising, construction, and regular operation of a junior high school computer lab that introduced computer-based learning to educators and students in a remote village. Resulted in the best-in-district performance on national high school entrance exams for subsequent years: 2013-16.
 ** 11/10 - 6/12: Editor, /Celebrate Languages Audio Project/, Peace Corps Ghana, West Africa
